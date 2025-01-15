@@ -8,6 +8,93 @@
     <link rel="icon" href="./imagenes/informatica.png">
 </head>
 <body>
+<header class="header">
+    <img src="./imagenes/desarrollador.png" alt="Logo de TechnoShop" class="header__logo">
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li>
+            <li class="header__nav-item"><a href="./otraspaginas/productos.html" class="header__nav-link">Productos</a></li>
+            <li class="header__nav-item"><a href="./otraspaginas/servicios.html" class="header__nav-link">Servicios</a></li>
+            <li class="header__nav-item"><a href="./otraspaginas/contacto.html" class="header__nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main>
+    <section class="hero">
+        <h1 class="hero__title">Bienvenido a TechnoShop</h1>
+        <p class="hero__subtitle">Tu tienda de confianza para equipos informáticos y servicios de mantenimiento</p>
+        <a href="productos.html" class="hero__cta">Ver productos</a>
+    </section>
+
+    <section class="featured-products">
+        <h2 class="featured-products__title">Productos destacados</h2>
+        <ul class="featured-products__list">
+            <li class="product-card">
+                <img src="laptop.jpg" alt="Laptop de última generación" class="product-card__img">
+                <h3 class="product-card__title">Laptop Pro X</h3>
+                <p class="product-card__description">Potente laptop para profesionales</p>
+                <a href="productos.html#laptop-pro-x" class="product-card__link">Ver detalles</a>
+            </li>
+            <li class="product-card">
+                <img src="desktop.jpg" alt="PC de escritorio de alto rendimiento" class="product-card__img">
+                <h3 class="product-card__title">Desktop Gamer</h3>
+                <p class="product-card__description">Máximo rendimiento para gaming</p>
+                <a href="productos.html#desktop-gamer" class="product-card__link">Ver detalles</a>
+            </li>
+            <li class="product-card">
+                <img src="tablet.jpg" alt="Tablet versátil" class="product-card__img">
+                <h3 class="product-card__title">Tablet Flex</h3>
+                <p class="product-card__description">Versatilidad en tus manos</p>
+                <a href="productos.html#tablet-flex" class="product-card__link">Ver detalles</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="news">
+        <h2 class="news__title">Últimas noticias</h2>
+        <ul class="news__list">
+            <li class="news-card">
+                <h3 class="news-card__title">Nuevos procesadores en el mercado</h3>
+                <p class="news-card__excerpt">Descubre las últimas innovaciones en procesadores...</p>
+                <a href="#" class="news-card__link">Leer más</a>
+            </li>
+            <li class="news-card">
+                <h3 class="news-card__title">Consejos para mantener tu PC</h3>
+                <p class="news-card__excerpt">Aprende a cuidar tu equipo con estos sencillos pasos...</p>
+                <a href="#" class="news-card__link">Leer más</a>
+            </li>
+            <li class="news-card">
+                <h3 class="news-card__title">Ofertas de la semana</h3>
+                <p class="news-card__excerpt">No te pierdas nuestras increíbles ofertas en equipos...</p>
+                <a href="#" class="news-card__link">Leer más</a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="footer__section">
+        <h4 class="footer__title">Contacto</h4>
+        <p>Email: info-empresa@technoshop.com</p>
+        <p>Teléfono: (123) 456-7890</p>
+    </section>
+    <section class="footer__section">
+        <h4 class="footer__title">Síguenos</h4>
+        <ul class="footer__social-list">
+            <li><a href="#" class="footer__social-link">Facebook</a></li>
+            <li><a href="#" class="footer__social-link">Twitter</a></li>
+            <li><a href="#" class="footer__social-link">Instagram</a></li>
+        </ul>
+    </section>
+    <section class="footer__section">
+        <h4 class="footer__title">Newsletter</h4>
+        <form class="footer__form">
+            <input type="email" placeholder="Tu email" required class="footer__input">
+            <button type="submit" class="footer__button">Suscribirse</button>
+        </form>
+    </section>
+    <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
