@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info-Empresa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./imagenes/informatica.png">
+</head>
+<body>
+<header class="header">
+  <img src="logo.svg" alt="Logo de TechnoShop" class="header__logo">
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li>
+      <li class="header__nav-item"><a href="productos.html" class="header__nav-link">Productos</a></li>
+      <li class="header__nav-item"><a href="servicios.html" class="header__nav-link">Servicios</a></li>
+      <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero hero--contact">
+    <h1 class="hero__title">Contacto</h1>
+    <p class="hero__subtitle">Estamos aquí para ayudarte. ¡Contáctanos!</p>
+  </section>
+
+  <section class="contact">
+    <h2 class="contact__title">Formulario de contacto</h2>
+    <form class="contact-form" action="#" method="POST">
+      <label for="nombre" class="contact-form__label">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required class="contact-form__input">
+
+      <label for="email" class="contact-form__label">Email:</label>
+      <input type="email" id="email" name="email" required class="contact-form__input">
+
+      <label for="telefono" class="contact-form__label">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" class="contact-form__input">
+
+      <label for="asunto" class="contact-form__label">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required class="contact-form__input">
+
+      <label for="mensaje" class="contact-form__label">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required class="contact-form__textarea"></textarea>
+
+      <label for="preferencia" class="contact-form__label">Preferencia de contacto:</label>
+      <select id="preferencia" name="preferencia" class="contact-form__select">
+        <option value="email">Email</option>
+        <option value="telefono">Teléfono</option>
+      </select>
+
+      <button type="submit" class="contact-form__submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <section class="news">
+    <h2 class="news__title">Últimas noticias</h2>
+    <ul class="news__list">
+      <li class="news-card">
+        <h3 class="news-card__title">Nuevo horario de atención al cliente</h3>
+        <p class="news-card__excerpt">Ampliamos nuestro horario de atención para servirte mejor.</p>
+        <a href="#" class="news-card__link">Leer más</a>
+      </li>
+      <li class="news-card">
+        <h3 class="news-card__title">Encuesta de satisfacción</h3>
+        <p class="news-card__excerpt">Participa en nuestra encuesta y ayúdanos a mejorar nuestros servicios.</p>
+        <a href="#" class="news-card__link">Leer más</a>
+      </li>
+      <li class="news-card">
+        <h3 class="news-card__title">Nuevo canal de soporte en línea</h3>
+        <p class="news-card__excerpt">Ahora puedes contactarnos a través de nuestro chat en vivo.</p>
+        <a href="#" class="news-card__link">Leer más</a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <section class="footer__section">
+    <h4 class="footer__title">Contacto</h4>
+    <p>Email: info@technoshop.com</p>
+    <p>Teléfono: (123) 456-7890</p>
+  </section>
+  <section class="footer__section">
+    <h4 class="footer__title">Síguenos</h4>
+    <ul class="footer__social-list">
+      <li><a href="#" class="footer__social-link">Facebook</a></li>
+      <li><a href="#" class="footer__social-link">Twitter</a></li>
+      <li><a href="#" class="footer__social-link">Instagram</a></li>
+    </ul>
+  </section>
+  <section class="footer__section">
+    <h4 class="footer__title">Newsletter</h4>
+    <form class="footer__form">
+      <input type="email" placeholder="Tu email" required class="footer__input">
+      <button type="submit" class="footer__button">Suscribirse</button>
+    </form>
+  </section>
+  <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
