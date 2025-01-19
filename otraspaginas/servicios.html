@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info-Empresa</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../imagenes/informatica.png">
+  <!-- Metadatos de la página -->
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva para dispositivos móviles -->
+  <title>Info-Empresa</title> <!-- Título de la página -->
+  <link rel="stylesheet" href="../style.css"> <!-- Enlace a los estilos CSS que dan formato a la página -->
+  <link rel="icon" href="../imagenes/informatica.png"> <!-- Icono que se muestra en la pestaña del navegador -->
 </head>
+
+<body>
+<!-- Cabecera del sitio web -->
 <header class="header">
+  <!-- Logo de la empresa -->
   <img src="../imagenes/desarrollador.png" alt="Logo Info-Empresa " class="header__logo">
+  <!-- Menú de navegación -->
   <nav class="header__nav">
     <ul class="header__nav-list">
-      <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Inicio</a></li>
-      <li class="header__nav-item"><a href="./productos.html" class="header__nav-link">Productos</a></li>
-      <li class="header__nav-item"><a href="./servicios.html" class="header__nav-link">Servicios</a></li>
-      <li class="header__nav-item"><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
+      <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Inicio</a></li> <!-- Enlace a la página de inicio -->
+      <li class="header__nav-item"><a href="./productos.html" class="header__nav-link">Productos</a></li> <!-- Enlace a la página de productos -->
+      <li class="header__nav-item"><a href="./servicios.html" class="header__nav-link">Servicios</a></li> <!-- Enlace a la página de servicios -->
+      <li class="header__nav-item"><a href="./contacto.html" class="header__nav-link">Contacto</a></li> <!-- Enlace a la página de contacto -->
     </ul>
   </nav>
 </header>
+
+<!-- Cuerpo principal de la página -->
 <main>
+  <!-- Sección hero que da una bienvenida a los usuarios -->
   <section class="hero hero--services">
-    <h1 class="hero__title">Nuestros Servicios</h1>
-    <p class="hero__subtitle">Soluciones informáticas para todas tus necesidades</p>
+    <h1 class="hero__title">Nuestros Servicios</h1> <!-- Título de la sección -->
+    <p class="hero__subtitle">Soluciones informáticas para todas tus necesidades</p> <!-- Descripción de la sección -->
   </section>
 
+  <!-- Sección que describe los servicios ofrecidos -->
   <section class="services">
-    <h2 class="services__title">Servicios que ofrecemos</h2>
+    <h2 class="services__title">Servicios que ofrecemos</h2> <!-- Título de la sección -->
     <ul class="services__list">
+      <!-- Cada servicio es representado por una tarjeta -->
       <li class="service-card">
-        <h3 class="service-card__title">Mantenimiento de Equipos</h3>
-        <p class="service-card__description">Realizamos mantenimiento preventivo y correctivo para mantener tus equipos en óptimas condiciones.</p>
-        <a href="#" class="service-card__link">Más información</a>
+        <h3 class="service-card__title">Mantenimiento de Equipos</h3> <!-- Título del servicio -->
+        <p class="service-card__description">Realizamos mantenimiento preventivo y correctivo para mantener tus equipos en óptimas condiciones.</p> <!-- Descripción del servicio -->
+        <a href="#" class="service-card__link">Más información</a> <!-- Enlace para más detalles -->
       </li>
       <li class="service-card">
         <h3 class="service-card__title">Reparación de Hardware</h3>
@@ -50,9 +61,11 @@
     </ul>
   </section>
 
+  <!-- Sección de noticias relacionadas con los servicios -->
   <section class="news">
-    <h2 class="news__title">Últimas noticias</h2>
+    <h2 class="news__title">Últimas noticias</h2> <!-- Título de la sección -->
     <ul class="news__list">
+      <!-- Cada noticia es representada por una tarjeta -->
       <li class="news-card">
         <h3 class="news-card__title">Nuevo servicio de diagnóstico remoto</h3>
         <p class="news-card__excerpt">Ahora ofrecemos diagnóstico remoto para problemas de software. ¡Ahorra tiempo y dinero!</p>
@@ -72,28 +85,37 @@
   </section>
 </main>
 
+<!-- Pie de página con información adicional -->
 <footer class="footer">
+  <!-- Sección de contacto -->
   <section class="footer__section">
     <h4 class="footer__title">Contacto</h4>
-    <p>Email: info@technoshop.com</p>
-    <p>Teléfono: (123) 456-7890</p>
+    <p>Email: info@technoshop.com</p> <!-- Dirección de correo electrónico de contacto -->
+    <p>Teléfono: (123) 456-7890</p> <!-- Número de teléfono de contacto -->
   </section>
+
+  <!-- Sección de redes sociales -->
   <section class="footer__section">
     <h4 class="footer__title">Síguenos</h4>
     <ul class="footer__social-list">
-      <li><a href="#" class="footer__social-link">Facebook</a></li>
-      <li><a href="#" class="footer__social-link">Twitter</a></li>
-      <li><a href="#" class="footer__social-link">Instagram</a></li>
+      <li><a href="#" class="footer__social-link">Facebook</a></li> <!-- Enlace a Facebook -->
+      <li><a href="#" class="footer__social-link">Twitter</a></li> <!-- Enlace a Twitter -->
+      <li><a href="#" class="footer__social-link">Instagram</a></li> <!-- Enlace a Instagram -->
     </ul>
   </section>
+
+  <!-- Sección de newsletter para suscripciones -->
   <section class="footer__section">
     <h4 class="footer__title">Newsletter</h4>
     <form class="footer__form">
-      <input type="email" placeholder="Tu email" required class="footer__input">
-      <button type="submit" class="footer__button">Suscribirse</button>
+      <input type="email" placeholder="Tu email" required class="footer__input"> <!-- Campo de entrada para el correo electrónico -->
+      <button type="submit" class="footer__button">Suscribirse</button> <!-- Botón de envío -->
     </form>
   </section>
+
+  <!-- Información de copyright -->
   <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
+
