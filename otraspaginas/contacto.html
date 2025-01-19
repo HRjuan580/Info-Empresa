@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info-Empresa</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../imagenes/informatica.png">
+  <!-- Metadatos de la página -->
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva para dispositivos móviles -->
+  <title>Info-Empresa</title> <!-- Título de la página -->
+  <link rel="stylesheet" href="../style.css"> <!-- Enlace al archivo CSS para dar estilo a la página -->
+  <link rel="icon" href="../imagenes/informatica.png"> <!-- Icono de la página en la pestaña del navegador -->
 </head>
+
 <body>
+<!-- Cabecera con el logo y menú de navegación -->
 <header class="header">
-  <img src="../imagenes/desarrollador.png" alt="Logo Info-Empresa " class="header__logo">
+  <img src="../imagenes/desarrollador.png" alt="Logo Info-Empresa " class="header__logo"> <!-- Logo de la empresa -->
   <nav class="header__nav">
     <ul class="header__nav-list">
-      <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Inicio</a></li>
-      <li class="header__nav-item"><a href="./productos.html" class="header__nav-link">Productos</a></li>
-      <li class="header__nav-item"><a href="./servicios.html" class="header__nav-link">Servicios</a></li>
-      <li class="header__nav-item"><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
+      <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Inicio</a></li> <!-- Enlace a la página de inicio -->
+      <li class="header__nav-item"><a href="./productos.html" class="header__nav-link">Productos</a></li> <!-- Enlace a la página de productos -->
+      <li class="header__nav-item"><a href="./servicios.html" class="header__nav-link">Servicios</a></li> <!-- Enlace a la página de servicios -->
+      <li class="header__nav-item"><a href="./contacto.html" class="header__nav-link">Contacto</a></li> <!-- Enlace a la página de contacto -->
     </ul>
   </nav>
 </header>
 
 <main>
+  <!-- Sección principal con el título y subtítulo -->
   <section class="hero hero--contact">
-    <h1 class="hero__title">Contacto</h1>
-    <p class="hero__subtitle">Estamos aquí para ayudarte. ¡Contáctanos!</p>
+    <h1 class="hero__title">Contacto</h1> <!-- Título de la sección -->
+    <p class="hero__subtitle">Estamos aquí para ayudarte. ¡Contáctanos!</p> <!-- Subtítulo que invita a contactar -->
   </section>
 
+  <!-- Formulario de contacto -->
   <section class="contact">
-    <h2 class="contact__title">Formulario de contacto</h2>
-    <form class="contact-form" action="#" method="POST">
-      <label for="nombre" class="contact-form__label">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required class="contact-form__input">
+    <h2 class="contact__title">Formulario de contacto</h2> <!-- Título del formulario -->
+    <form class="contact-form" action="#" method="POST"> <!-- Formulario con el método POST -->
+      <!-- Campos del formulario -->
+      <label for="nombre" class="contact-form__label">Nombre:</label> <!-- Etiqueta del campo -->
+      <input type="text" id="nombre" name="nombre" required class="contact-form__input"> <!-- Campo de texto para el nombre -->
 
-      <label for="email" class="contact-form__label">Email:</label>
-      <input type="email" id="email" name="email" required class="contact-form__input">
+      <label for="email" class="contact-form__label">Email:</label> <!-- Etiqueta del campo -->
+      <input type="email" id="email" name="email" required class="contact-form__input"> <!-- Campo de email -->
 
-      <label for="telefono" class="contact-form__label">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" class="contact-form__input">
+      <label for="telefono" class="contact-form__label">Teléfono:</label> <!-- Etiqueta del campo -->
+      <input type="tel" id="telefono" name="telefono" class="contact-form__input"> <!-- Campo de teléfono (opcional) -->
 
-      <label for="asunto" class="contact-form__label">Asunto:</label>
-      <input type="text" id="asunto" name="asunto" required class="contact-form__input">
+      <label for="asunto" class="contact-form__label">Asunto:</label> <!-- Etiqueta del campo -->
+      <input type="text" id="asunto" name="asunto" required class="contact-form__input"> <!-- Campo de texto para el asunto -->
 
-      <label for="mensaje" class="contact-form__label">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required class="contact-form__textarea"></textarea>
+      <label for="mensaje" class="contact-form__label">Mensaje:</label> <!-- Etiqueta del campo -->
+      <textarea id="mensaje" name="mensaje" required class="contact-form__textarea"></textarea> <!-- Campo de texto para el mensaje -->
 
-      <label for="preferencia" class="contact-form__label">Preferencia de contacto:</label>
+      <label for="preferencia" class="contact-form__label">Preferencia de contacto:</label> <!-- Etiqueta del campo -->
       <select id="preferencia" name="preferencia" class="contact-form__select">
-        <option value="email">Email</option>
-        <option value="telefono">Teléfono</option>
+        <option value="email">Email</option> <!-- Opción para seleccionar Email -->
+        <option value="telefono">Teléfono</option> <!-- Opción para seleccionar Teléfono -->
       </select>
 
-      <button type="submit" class="contact-form__submit">Enviar mensaje</button>
+      <button type="submit" class="contact-form__submit">Enviar mensaje</button> <!-- Botón para enviar el formulario -->
     </form>
   </section>
 
+  <!-- Sección de últimas noticias -->
   <section class="news">
-    <h2 class="news__title">Últimas noticias</h2>
+    <h2 class="news__title">Últimas noticias</h2> <!-- Título de la sección -->
     <ul class="news__list">
+      <!-- Noticias individuales con su título, resumen y enlace -->
       <li class="news-card">
         <h3 class="news-card__title">Nuevo horario de atención al cliente</h3>
         <p class="news-card__excerpt">Ampliamos nuestro horario de atención para servirte mejor.</p>
@@ -76,27 +84,35 @@
   </section>
 </main>
 
+<!-- Pie de página con información adicional -->
 <footer class="footer">
+  <!-- Información de contacto -->
   <section class="footer__section">
     <h4 class="footer__title">Contacto</h4>
-    <p>Email: info@technoshop.com</p>
-    <p>Teléfono: (123) 456-7890</p>
+    <p>Email: info@technoshop.com</p> <!-- Dirección de correo electrónico -->
+    <p>Teléfono: (123) 456-7890</p> <!-- Número de teléfono -->
   </section>
+
+  <!-- Enlaces a redes sociales -->
   <section class="footer__section">
     <h4 class="footer__title">Síguenos</h4>
     <ul class="footer__social-list">
-      <li><a href="#" class="footer__social-link">Facebook</a></li>
-      <li><a href="#" class="footer__social-link">Twitter</a></li>
-      <li><a href="#" class="footer__social-link">Instagram</a></li>
+      <li><a href="#" class="footer__social-link">Facebook</a></li> <!-- Enlace a Facebook -->
+      <li><a href="#" class="footer__social-link">Twitter</a></li> <!-- Enlace a Twitter -->
+      <li><a href="#" class="footer__social-link">Instagram</a></li> <!-- Enlace a Instagram -->
     </ul>
   </section>
+
+  <!-- Sección para suscribirse al newsletter -->
   <section class="footer__section">
     <h4 class="footer__title">Newsletter</h4>
     <form class="footer__form">
-      <input type="email" placeholder="Tu email" required class="footer__input">
-      <button type="submit" class="footer__button">Suscribirse</button>
+      <input type="email" placeholder="Tu email" required class="footer__input"> <!-- Campo para ingresar el correo electrónico -->
+      <button type="submit" class="footer__button">Suscribirse</button> <!-- Botón para enviar el correo de suscripción -->
     </form>
   </section>
+
+  <!-- Información de derechos de autor -->
   <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p>
 </footer>
 </body>
