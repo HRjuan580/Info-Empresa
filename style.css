@@ -1,456 +1,347 @@
 :root {
     /* Tema claro */
-    --background-color: #4464ad;
-    --text-color: #393939;
-    --accent-color: #a4b0f5;
+    --background-color: #4464ad;  /* Color de fondo principal */
+    --text-color: #393939;  /* Color de texto principal */
+    --accent-color: #a4b0f5;  /* Color de acento (botones, enlaces, etc.) */
 
     /* Colores adicionales para mejorar el contraste y la legibilidad */
-    --background-light: #ffffff;
-    --text-light: #ffffff;
-    --accent-dark: #3450a0;
+    --background-light: #ffffff;  /* Fondo claro */
+    --text-light: #ffffff;  /* Texto en colores claros */
+    --accent-dark: #3450a0;  /* Color de acento más oscuro para interacciones */
 
     /* Fuentes */
-    --font-main: 'Arial', sans-serif;
-    --font-headings: 'Helvetica', sans-serif;
+    --font-main: 'Arial', sans-serif;  /* Fuente principal */
+    --font-headings: 'Helvetica', sans-serif;  /* Fuente para los encabezados */
 }
 
 /* Estilos generales */
 body {
-    font-family: var(--font-main);
-    color: var(--text-color);
-    background-color: var(--background-light);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: var(--font-main);  /* Establece la fuente principal */
+    color: var(--text-color);  /* Establece el color del texto */
+    background-color: var(--background-light);  /* Color de fondo principal */
+    line-height: 1.6;  /* Espaciado entre líneas */
+    margin: 0;  /* Elimina el margen por defecto */
+    padding: 0;  /* Elimina el padding por defecto */
 }
 
 /* Header */
 .header {
-    background-color: var(--background-color);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--background-color);  /* Color de fondo del encabezado */
+    padding: 1rem 0;  /* Espaciado vertical */
+    display: flex;  /* Usa flexbox para la disposición */
+    justify-content: space-between;  /* Espacio entre el logo y los enlaces */
+    align-items: center;  /* Alinea los elementos verticalmente */
 }
 
 .header__logo {
-    max-width: 150px;
-    margin-left: 1rem;
+    max-width: 150px;  /* Limita el tamaño máximo del logo */
+    margin-left: 1rem;  /* Añade margen izquierdo */
 }
 
 .header__nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    list-style: none;  /* Elimina los puntos de lista */
+    display: flex;  /* Usa flexbox para la disposición de los elementos de navegación */
+    justify-content: center;  /* Centra los elementos */
+    padding: 0;  /* Elimina el padding */
+    margin: 0;  /* Elimina el margen */
 }
 
 .header__nav-item {
-    margin: 0 1rem;
+    margin: 0 1rem;  /* Añade espacio horizontal entre los elementos de la lista */
 }
 
 .header__nav-link {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: var(--text-light);  /* Color del texto en los enlaces */
+    text-decoration: none;  /* Elimina el subrayado en los enlaces */
+    font-weight: bold;  /* Hace que el texto sea en negrita */
+    transition: color 0.3s ease;  /* Transición suave al cambiar de color */
 }
 
 .header__nav-link:hover {
-    color: var(--accent-color);
+    color: var(--accent-color);  /* Cambia el color del enlace al pasar el cursor */
 }
 
 /* Hero section */
 .hero {
-    background-color: var(--background-color);
-    color: var(--text-light);
-    text-align: center;
-    padding: 4rem 0;
+    background-color: var(--background-color);  /* Color de fondo de la sección Hero */
+    color: var(--text-light);  /* Color de texto en la sección Hero */
+    text-align: center;  /* Centra el texto */
+    padding: 4rem 0;  /* Espaciado vertical */
 }
 
 .hero__title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;  /* Tamaño de la fuente del título */
+    margin-bottom: 1rem;  /* Añade espacio debajo del título */
 }
 
 .hero__subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;  /* Tamaño de la fuente del subtítulo */
+    margin-bottom: 2rem;  /* Añade espacio debajo del subtítulo */
 }
 
 .hero__cta {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block;  /* Hace que el botón sea en línea, pero con bloques */
+    background-color: var(--accent-color);  /* Fondo del botón */
+    color: var(--text-color);  /* Color del texto en el botón */
+    padding: 0.8rem 1.5rem;  /* Espaciado dentro del botón */
+    text-decoration: none;  /* Elimina el subrayado */
+    border-radius: 5px;  /* Bordes redondeados */
+    transition: background-color 0.3s ease;  /* Transición suave del color de fondo */
 }
 
 .hero__cta:hover {
-    background-color: var(--accent-dark);
+    background-color: var(--accent-dark);  /* Cambia el color de fondo al pasar el cursor */
 }
 
 /* Featured products */
 .featured-products {
-    padding: 4rem 0;
-    background-color: var(--background-light);
+    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--background-light);  /* Fondo claro */
 }
 
 .featured-products__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
+    text-align: center;  /* Centra el título */
+    margin-bottom: 2rem;  /* Añade espacio debajo del título */
+    color: var(--text-color);  /* Color del texto */
 }
 
 .featured-products__list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    list-style: none;  /* Elimina los puntos de lista */
+    padding: 0;  /* Elimina el padding */
+    display: grid;  /* Usa un sistema de cuadrícula para los productos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Crea columnas que se ajustan automáticamente */
+    gap: 2rem;  /* Añade espacio entre las tarjetas de productos */
 }
 
 .product-card {
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    padding: 1rem;
-    text-align: center;
-    background-color: var(--background-light);
+    border: 1px solid var(--accent-color);  /* Borde alrededor de cada tarjeta */
+    border-radius: 5px;  /* Bordes redondeados */
+    padding: 1rem;  /* Espaciado interno */
+    text-align: center;  /* Centra el texto dentro de la tarjeta */
+    background-color: var(--background-light);  /* Fondo claro */
 }
 
 .product-card__img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+    height: auto;  /* Ajusta la altura automáticamente */
 }
 
 .product-card__title {
-    margin: 1rem 0;
-    color: var(--text-color);
+    margin: 1rem 0;  /* Añade espacio arriba y abajo del título */
+    color: var(--text-color);  /* Color del texto */
 }
 
 .product-card__description {
-    margin-bottom: 1rem;
-    color: var(--text-color);
+    margin-bottom: 1rem;  /* Añade espacio debajo de la descripción */
+    color: var(--text-color);  /* Color del texto */
 }
 
 .product-card__price {
-    font-weight: bold;
-    color: var(--accent-color);
-    margin: 0.5rem 0;
+    font-weight: bold;  /* Hace que el precio sea en negrita */
+    color: var(--accent-color);  /* Color del precio */
+    margin: 0.5rem 0;  /* Añade margen arriba y abajo del precio */
 }
 
 .product-card__link {
-    display: inline-block;
-    background-color: var(--background-color);
-    color: var(--text-light);
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
+    display: inline-block;  /* Hace que el enlace sea en línea */
+    background-color: var(--background-color);  /* Fondo del enlace */
+    color: var(--text-light);  /* Color del texto en el enlace */
+    padding: 0.5rem 1rem;  /* Espaciado dentro del enlace */
+    text-decoration: none;  /* Elimina el subrayado */
+    border-radius: 3px;  /* Bordes redondeados */
+    transition: background-color 0.3s ease;  /* Transición suave al cambiar el color de fondo */
 }
 
 .product-card__link:hover {
-    background-color: var(--accent-dark);
+    background-color: var(--accent-dark);  /* Cambia el color de fondo al pasar el cursor */
 }
 
 /* News section */
 .news {
-    background-color: var(--accent-color);
-    padding: 4rem 0;
+    background-color: var(--accent-color);  /* Fondo de la sección de noticias */
+    padding: 4rem 0;  /* Espaciado vertical */
 }
 
 .news__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
+    text-align: center;  /* Centra el título */
+    margin-bottom: 2rem;  /* Añade espacio debajo del título */
+    color: var(--text-color);  /* Color del texto */
 }
 
 .news__list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    list-style: none;  /* Elimina los puntos de lista */
+    padding: 0;  /* Elimina el padding */
+    display: grid;  /* Usa una cuadrícula para las noticias */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Crea columnas que se ajustan automáticamente */
+    gap: 2rem;  /* Añade espacio entre las tarjetas de noticias */
 }
 
 .news-card {
-    background-color: var(--background-light);
-    border: 1px solid var(--background-color);
-    border-radius: 5px;
-    padding: 1.5rem;
+    background-color: var(--background-light);  /* Fondo claro para las tarjetas de noticias */
+    border: 1px solid var(--background-color);  /* Borde alrededor de la tarjeta */
+    border-radius: 5px;  /* Bordes redondeados */
+    padding: 1.5rem;  /* Espaciado dentro de la tarjeta */
 }
 
 .news-card__title {
-    margin-top: 0;
-    color: var(--text-color);
+    margin-top: 0;  /* Elimina el margen superior */
+    color: var(--text-color);  /* Color del texto */
 }
 
 .news-card__excerpt {
-    color: var(--text-color);
+    color: var(--text-color);  /* Color del texto de la descripción */
 }
 
 .news-card__link {
-    display: inline-block;
-    color: var(--background-color);
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1rem;
+    display: inline-block;  /* Hace que el enlace sea en línea */
+    color: var(--background-color);  /* Color del enlace */
+    text-decoration: none;  /* Elimina el subrayado */
+    font-weight: bold;  /* Hace que el enlace sea en negrita */
+    margin-top: 1rem;  /* Añade espacio encima del enlace */
 }
 
 /* Footer */
 .footer {
-    background-color: var(--background-color);
-    color: var(--text-light);
-    padding: 3rem 1rem 1rem;
+    background-color: var(--background-color);  /* Fondo del pie de página */
+    color: var(--text-light);  /* Color del texto */
+    padding: 3rem 1rem 1rem;  /* Espaciado interno */
 }
 
 .footer__section {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;  /* Añade espacio debajo de cada sección */
 }
 
 .footer__title {
-    margin-top: 0;
-    color: var(--accent-color);
+    margin-top: 0;  /* Elimina el margen superior */
+    color: var(--accent-color);  /* Color de los títulos en el pie de página */
 }
 
 .footer__social-list {
-    list-style: none;
-    padding: 0;
+    list-style: none;  /* Elimina los puntos de lista */
+    padding: 0;  /* Elimina el padding */
 }
 
 .footer__social-link {
-    display: block;
-    color: var(--text-light);
-    text-decoration: none;
-    margin-bottom: 0.5rem;
+    display: block;  /* Hace que cada enlace se muestre en bloque */
+    color: var(--text-light);  /* Color del texto de los enlaces */
+    text-decoration: none;  /* Elimina el subrayado */
+    margin-bottom: 0.5rem;  /* Añade espacio debajo de cada enlace */
 }
 
 .footer__form {
-    display: flex;
+    display: flex;  /* Usa flexbox para la disposición del formulario */
 }
 
 .footer__input {
-    flex-grow: 1;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 3px 0 0 3px;
+    flex-grow: 1;  /* Hace que el campo de texto ocupe el espacio disponible */
+    padding: 0.5rem;  /* Añade espacio dentro del campo */
+    border: none;  /* Elimina el borde por defecto */
+    border-radius: 3px 0 0 3px;  /* Bordes redondeados en el lado izquierdo */
 }
 
 .footer__button {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 0 3px 3px 0;
+    background-color: var(--accent-color);  /* Fondo del botón */
+    color: var(--text-color);  /* Color del texto */
+    border: none;  /* Elimina el borde por defecto */
+    padding: 0.5rem 1rem;  /* Añade espacio dentro del botón */
+    cursor: pointer;  /* Cambia el cursor cuando se pasa sobre el botón */
+    border-radius: 0 3px 3px 0;  /* Bordes redondeados en el lado derecho */
 }
 
 .footer__copyright {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: var(--text-light);
+    text-align: center;  /* Centra el texto del copyright */
+    margin-top: 2rem;  /* Añade espacio encima */
+    font-size: 0.9rem;  /* Reduce el tamaño de la fuente */
+    color: var(--text-light);  /* Color del texto */
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: column;  /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
     }
 
     .header__logo {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;  /* Añade margen inferior */
     }
 
     .header__nav-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;  /* Organiza los enlaces en columna */
+        align-items: center;  /* Centra los enlaces */
     }
 
     .header__nav-item {
-        margin: 0.5rem 0;
+        margin: 0.5rem 0;  /* Añade margen vertical entre los enlaces */
     }
 
     .footer {
-        text-align: center;
+        text-align: center;  /* Centra el texto del pie de página */
     }
 
     .footer__form {
-        justify-content: center;
+        justify-content: center;  /* Centra el formulario */
     }
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #2a3c6d;
-        --text-color: #f0f0f0;
-        --accent-color: #7280c7;
-        --background-light: #1a2540;
-        --text-light: #ffffff;
-        --accent-dark: #5668b3;
+        --background-color: #2a3c6d;  /* Fondo oscuro */
+        --text-color: #f0f0f0;  /* Texto claro */
+        --accent-color: #7280c7;  /* Color de acento en modo oscuro */
+        --background-light: #1a2540;  /* Fondo claro en modo oscuro */
+        --text-light: #ffffff;  /* Texto blanco */
+        --accent-dark: #5668b3;  /* Color oscuro de acento */
     }
 
     .product-card,
     .news-card {
-        background-color: var(--background-color);
-        border-color: var(--accent-color);
+        background-color: var(--background-color);  /* Fondo oscuro en tarjetas */
+        border-color: var(--accent-color);  /* Borde en color acentuado */
     }
 
     .news {
-        background-color: var(--accent-dark);
+        background-color: var(--accent-dark);  /* Fondo oscuro para la sección de noticias */
     }
 
     .news-card__link {
-        color: var(--accent-color);
+        color: var(--accent-color);  /* Color del enlace en modo oscuro */
     }
 }
 
 /* Estilos para la página de productos */
 .product-list {
-    padding: 4rem 0;
-    background-color: var(--background-light);
+    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--background-light);  /* Fondo claro */
 }
-
-.product-list__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
-
-.product-list__grid {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
 
 /* Estilos para la página de servicios */
 .services {
-    padding: 4rem 0;
-    background-color: var(--background-light);
-}
-
-.services__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
-
-.services__list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background-color: var(--background-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    padding: 1.5rem;
-    color: var(--text-light);
-}
-
-.service-card__title {
-    margin-top: 0;
-    color: var(--accent-color);
-}
-
-.service-card__description {
-    margin-bottom: 1rem;
-}
-
-.service-card__link {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-.service-card__link:hover {
-    background-color: var(--accent-dark);
+    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--background-light);  /* Fondo claro */
 }
 
 /* Estilos para la página de contacto */
 .contact {
-    padding: 4rem 0;
-    background-color: var(--background-light);
-}
-
-.contact__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-}
-
-.contact-form__label {
-    color: var(--text-color);
-    font-weight: bold;
-}
-
-.contact-form__input,
-.contact-form__textarea,
-.contact-form__select {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 3px;
-    background-color: var(--background-light);
-    color: var(--text-color);
-}
-
-.contact-form__textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.contact-form__submit {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form__submit:hover {
-    background-color: var(--accent-dark);
+    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--background-light);  /* Fondo claro */
 }
 
 /* Estilos para los héroes específicos de cada página */
 .hero--products,
 .hero--services,
 .hero--contact {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color);  /* Fondo específico para los héroes de cada página */
 }
 
 /* Imagen de fondo */
-
 body {
-    background-image: image("imagenes/fondoInformatica.jpg"); /* Aquí debes poner la ruta de tu imagen */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen en la página */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url("imagenes/fondoInformatica.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover;  /* La imagen cubre toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
 }
+
 
 
 
