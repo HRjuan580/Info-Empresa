@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Define el idioma del documento como inglés -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info-Empresa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./imagenes/informatica.png">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento, UTF-8 es estándar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Info-Empresa</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="icon" href="./imagenes/informatica.png"> <!-- Icono que aparece en la pestaña del navegador -->
 </head>
-<body>
-<header class="header">
-    <img src="./imagenes/desarrollador.png" alt="Logo Info-Empresa " class="header__logo">
-    <nav class="header__nav">
-        <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="./otraspaginas/productos.html" class="header__nav-link">Productos</a></li>
-            <li class="header__nav-item"><a href="./otraspaginas/servicios.html" class="header__nav-link">Servicios</a></li>
-            <li class="header__nav-item"><a href="./otraspaginas/contacto.html" class="header__nav-link">Contacto</a></li>
+
+<body> <!-- Cuerpo del documento -->
+<header class="header"> <!-- Encabezado de la página -->
+    <img src="./imagenes/desarrollador.png" alt="Logo Info-Empresa " class="header__logo"> <!-- Logo de la empresa con alt para accesibilidad -->
+    <nav class="header__nav"> <!-- Navegación principal del sitio -->
+        <ul class="header__nav-list"> <!-- Lista de navegación -->
+            <li class="header__nav-item"><a href="./otraspaginas/productos.html" class="header__nav-link">Productos</a></li> <!-- Enlace a la página de productos -->
+            <li class="header__nav-item"><a href="./otraspaginas/servicios.html" class="header__nav-link">Servicios</a></li> <!-- Enlace a la página de servicios -->
+            <li class="header__nav-item"><a href="./otraspaginas/contacto.html" class="header__nav-link">Contacto</a></li> <!-- Enlace a la página de contacto -->
         </ul>
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h1 class="hero__title">Bienvenido a TechnoShop</h1>
-        <p class="hero__subtitle">Tu tienda de confianza para equipos informáticos y servicios de mantenimiento</p>
-        <a href="./otraspaginas/productos.html" class="hero__cta">Ver productos</a>
+<main> <!-- Contenido principal de la página -->
+    <section class="hero"> <!-- Sección destacada de bienvenida -->
+        <h1 class="hero__title">Bienvenido a TechnoShop</h1> <!-- Título principal de la página -->
+        <p class="hero__subtitle">Tu tienda de confianza para equipos informáticos y servicios de mantenimiento</p> <!-- Subtítulo de la bienvenida -->
+        <a href="./otraspaginas/productos.html" class="hero__cta">Ver productos</a> <!-- Enlace de llamada a la acción (CTA) para ver los productos -->
     </section>
 
-    <section class="featured-products">
-        <h2 class="featured-products__title">Productos destacados</h2>
-        <ul class="featured-products__list">
+    <section class="featured-products"> <!-- Sección de productos destacados -->
+        <h2 class="featured-products__title">Productos destacados</h2> <!-- Título de la sección -->
+        <ul class="featured-products__list"> <!-- Lista de productos destacados -->
+            <!-- Producto 1 -->
             <li class="product-card">
-                <img src="./imagenes/Laptop%20Pro%20X.jpg" alt="Laptop de última generación" class="product-card__img">
-                <h3 class="product-card__title">Laptop Pro X</h3>
-                <p class="product-card__description">Potente laptop para profesionales</p>
-                <a href="https://www.xataka.com/ordenadores/xiaomi-mi-notebook-pro-x-15-caracteristicas-precio-ficha-tecnica" class="product-card__link">Ver detalles</a>
+                <img src="./imagenes/Laptop%20Pro%20X.jpg" alt="Laptop de última generación" class="product-card__img"> <!-- Imagen del producto -->
+                <h3 class="product-card__title">Laptop Pro X</h3> <!-- Nombre del producto -->
+                <p class="product-card__description">Potente laptop para profesionales</p> <!-- Descripción corta del producto -->
+                <a href="https://www.xataka.com/ordenadores/xiaomi-mi-notebook-pro-x-15-caracteristicas-precio-ficha-tecnica" class="product-card__link">Ver detalles</a> <!-- Enlace para más detalles -->
             </li>
+            <!-- Producto 2 -->
             <li class="product-card">
                 <img src="./imagenes/Desktop%20Gamer.jpg" alt="PC de escritorio de alto rendimiento" class="product-card__img">
                 <h3 class="product-card__title">Desktop Gamer</h3>
                 <p class="product-card__description">Máximo rendimiento para gaming</p>
                 <a href="https://www.amazon.es/Vibox-I-96-Gaming-Completo-Procesador/dp/B0D2HZ6FHB" class="product-card__link">Ver detalles</a>
             </li>
+            <!-- Producto 3 -->
             <li class="product-card">
                 <img src="./imagenes/tablet.jpg" alt="Tablet versátil" class="product-card__img">
                 <h3 class="product-card__title">Tablet Flex</h3>
@@ -50,19 +54,22 @@
         </ul>
     </section>
 
-    <section class="news">
-        <h2 class="news__title">Últimas noticias</h2>
-        <ul class="news__list">
+    <section class="news"> <!-- Sección de noticias -->
+        <h2 class="news__title">Últimas noticias</h2> <!-- Título de la sección -->
+        <ul class="news__list"> <!-- Lista de noticias -->
+            <!-- Noticia 1 -->
             <li class="news-card">
                 <h3 class="news-card__title">Nuevos procesadores en el mercado</h3>
                 <p class="news-card__excerpt">Descubre las últimas innovaciones en procesadores...</p>
                 <a href="#" class="news-card__link">Leer más</a>
             </li>
+            <!-- Noticia 2 -->
             <li class="news-card">
                 <h3 class="news-card__title">Consejos para mantener tu PC</h3>
                 <p class="news-card__excerpt">Aprende a cuidar tu equipo con estos sencillos pasos...</p>
                 <a href="#" class="news-card__link">Leer más</a>
             </li>
+            <!-- Noticia 3 -->
             <li class="news-card">
                 <h3 class="news-card__title">Ofertas de la semana</h3>
                 <p class="news-card__excerpt">No te pierdas nuestras increíbles ofertas en equipos...</p>
@@ -72,28 +79,29 @@
     </section>
 </main>
 
-<footer class="footer">
-    <section class="footer__section">
+<footer class="footer"> <!-- Pie de página -->
+    <section class="footer__section"> <!-- Sección de contacto -->
         <h4 class="footer__title">Contacto</h4>
-        <p>Email: info-empresa@technoshop.com</p>
-        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: info-empresa@technoshop.com</p> <!-- Correo de contacto -->
+        <p>Teléfono: (123) 456-7890</p> <!-- Número de teléfono -->
     </section>
-    <section class="footer__section">
+    <section class="footer__section"> <!-- Sección de redes sociales -->
         <h4 class="footer__title">Síguenos</h4>
         <ul class="footer__social-list">
-            <li><a href="#" class="footer__social-link">Facebook</a></li>
-            <li><a href="#" class="footer__social-link">Twitter</a></li>
-            <li><a href="#" class="footer__social-link">Instagram</a></li>
+            <li><a href="#" class="footer__social-link">Facebook</a></li> <!-- Enlace a la página de Facebook -->
+            <li><a href="#" class="footer__social-link">Twitter</a></li> <!-- Enlace a la página de Twitter -->
+            <li><a href="#" class="footer__social-link">Instagram</a></li> <!-- Enlace a la página de Instagram -->
         </ul>
     </section>
-    <section class="footer__section">
+    <section class="footer__section"> <!-- Sección de suscripción al boletín -->
         <h4 class="footer__title">Newsletter</h4>
-        <form class="footer__form">
-            <input type="email" placeholder="Tu email" required class="footer__input">
-            <button type="submit" class="footer__button">Suscribirse</button>
+        <form class="footer__form"> <!-- Formulario para suscribirse al boletín -->
+            <input type="email" placeholder="Tu email" required class="footer__input"> <!-- Campo de entrada para el correo -->
+            <button type="submit" class="footer__button">Suscribirse</button> <!-- Botón para enviar la suscripción -->
         </form>
     </section>
-    <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p>
+    <p class="footer__copyright">&copy; 2025 TechnoShop. Todos los derechos reservados.</p> <!-- Copyright del sitio -->
 </footer>
 </body>
 </html>
+
