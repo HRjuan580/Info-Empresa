@@ -33,7 +33,7 @@ El diseño CSS es innovador, responsivo y organizado, cumpliendo con las mejores
 
 4. Validación y Mejora del Código
 Validación HTML y CSS:
-Los documentos HTML y CSS han sido validados utilizando herramientas de validación como el W3C Validator. El código está libre de errores, lo que asegura que cumple con los estándares web más recientes.
+Los documentos HTML y CSS han sido validados utilizando herramientas de validación como el W3C Validator. El código está libre de errores.
 
 Optimización del Código:
 Se redujo la redundancia del código CSS.
