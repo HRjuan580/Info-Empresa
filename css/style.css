@@ -336,12 +336,23 @@ body {
 
 /* Imagen de fondo */
 body {
-    background-image: url("imagenes/fondoInformatica.jpg"); /* Ruta de la imagen de fondo */
+    background-image: url("assets/fondoInformatica.jpg"); /* Ruta de la imagen de fondo */
     background-size: cover;  /* La imagen cubre toda la pantalla */
     background-position: center;  /* Centra la imagen */
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
 }
 
+.product-card__img:hover {
+        width: 100%;
+        transition: all 300ms;
+        position: relative;
+}
+.product-card__img:hover {
+        transform: scale(1.05);
 
+}
+.product-card__title:hover {
 
+        transform: scale(1.05)
+}
 
