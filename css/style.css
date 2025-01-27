@@ -1,369 +1,457 @@
+/* Definición de variables para el tema claro */
 :root {
-    /* Tema claro */
-    --background-color: #4464ad;  /* Color de fondo principal */
-    --text-color: #393939;  /* Color de texto principal */
-    --accent-color: #a4b0f5;  /* Color de acento (botones, enlaces, etc.) */
-
-    /* Colores adicionales para mejorar el contraste y la legibilidad */
-    --background-light: #ffffff;  /* Fondo claro */
-    --text-light: #ffffff;  /* Texto en colores claros */
-    --accent-dark: #3450a0;  /* Color de acento más oscuro para interacciones */
-
-    /* Fuentes */
-    --font-main: 'Arial', sans-serif;  /* Fuente principal */
-    --font-headings: 'Helvetica', sans-serif;  /* Fuente para los encabezados */
+    /* Colores del fondo, texto, acento y demás para el tema claro */
+    --background-color: #4464ad; /* Color de fondo principal */
+    --text-color: #393939; /* Color del texto principal */
+    --accent-color: #a4b0f5; /* Color de acento */
+    --background-light: #ffffff; /* Fondo claro */
+    --text-light: #ffffff; /* Texto blanco */
+    --accent-dark: #3450a0; /* Color de acento oscuro */
+    --font-main: "Arial", sans-serif; /* Fuente principal */
+    --font-headings: "Helvetica", sans-serif; /* Fuente para los encabezados */
 }
 
-/* Estilos generales */
+/* Estilos globales para el cuerpo */
 body {
-    font-family: var(--font-main);  /* Establece la fuente principal */
-    color: var(--text-color);  /* Establece el color del texto */
-    background-color: var(--background-light);  /* Color de fondo principal */
-    line-height: 1.6;  /* Espaciado entre líneas */
-    margin: 0;  /* Elimina el margen por defecto */
-    padding: 0;  /* Elimina el padding por defecto */
+    font-family: var(--font-main); /* Usamos la fuente principal */
+    color: var(--text-color); /* Color del texto */
+    background-color: var(--background-light); /* Fondo claro */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar padding predeterminado */
 }
 
-/* Header */
+/* Estilos para el encabezado */
 .header {
-    background-color: var(--background-color);  /* Color de fondo del encabezado */
-    padding: 1rem 0;  /* Espaciado vertical */
-    display: flex;  /* Usa flexbox para la disposición */
-    justify-content: space-between;  /* Espacio entre el logo y los enlaces */
-    align-items: center;  /* Alinea los elementos verticalmente */
+    background-color: var(--background-color); /* Fondo del encabezado */
+    padding: 1rem 0; /* Espaciado interno */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    align-items: center; /* Alinear los elementos verticalmente */
 }
 
+/* Estilo para el logo del encabezado */
 .header__logo {
-    max-width: 150px;  /* Limita el tamaño máximo del logo */
-    margin-left: 1rem;  /* Añade margen izquierdo */
+    max-width: 150px; /* Limitar el tamaño máximo */
+    margin-left: 1rem; /* Espaciado a la izquierda */
 }
 
+/* Estilo para la lista de navegación */
 .header__nav-list {
-    list-style: none;  /* Elimina los puntos de lista */
-    display: flex;  /* Usa flexbox para la disposición de los elementos de navegación */
-    justify-content: center;  /* Centra los elementos */
-    padding: 0;  /* Elimina el padding */
-    margin: 0;  /* Elimina el margen */
+    list-style: none; /* Eliminar viñetas de lista */
+    display: flex; /* Alinear los elementos de la lista horizontalmente */
+    justify-content: center; /* Centrar los elementos */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar márgenes */
 }
 
+/* Estilo para cada ítem de navegación */
 .header__nav-item {
-    margin: 0 1rem;  /* Añade espacio horizontal entre los elementos de la lista */
+    margin: 0 1rem; /* Espaciado entre los elementos */
 }
 
+/* Estilo para los enlaces de navegación */
 .header__nav-link {
-    color: var(--text-light);  /* Color del texto en los enlaces */
-    text-decoration: none;  /* Elimina el subrayado en los enlaces */
-    font-weight: bold;  /* Hace que el texto sea en negrita */
-    transition: color 0.3s ease;  /* Transición suave al cambiar de color */
+    color: var(--text-light); /* Color blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease; /* Transición suave en el color */
 }
 
+/* Estilo para los enlaces al pasar el ratón */
 .header__nav-link:hover {
-    color: var(--accent-color);  /* Cambia el color del enlace al pasar el cursor */
+    color: var(--accent-color); /* Cambio de color en hover */
 }
 
-/* Hero section */
+/* Estilos para la sección principal de la página (hero) */
 .hero {
-    background-color: var(--background-color);  /* Color de fondo de la sección Hero */
-    color: var(--text-light);  /* Color de texto en la sección Hero */
-    text-align: center;  /* Centra el texto */
-    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--background-color); /* Fondo de la sección */
+    color: var(--text-light); /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 4rem 0; /* Espaciado vertical */
 }
 
+/* Estilo para el título principal de la sección hero */
 .hero__title {
-    font-size: 2.5rem;  /* Tamaño de la fuente del título */
-    margin-bottom: 1rem;  /* Añade espacio debajo del título */
+    font-size: 2.5rem; /* Tamaño grande */
+    margin-bottom: 1rem; /* Espaciado debajo */
 }
 
+/* Estilo para el subtítulo en la sección hero */
 .hero__subtitle {
-    font-size: 1.2rem;  /* Tamaño de la fuente del subtítulo */
-    margin-bottom: 2rem;  /* Añade espacio debajo del subtítulo */
+    font-size: 1.2rem; /* Tamaño más pequeño que el título */
+    margin-bottom: 2rem; /* Espaciado debajo */
 }
 
+/* Estilo para el botón de llamada a la acción en hero */
 .hero__cta {
-    display: inline-block;  /* Hace que el botón sea en línea, pero con bloques */
-    background-color: var(--accent-color);  /* Fondo del botón */
-    color: var(--text-color);  /* Color del texto en el botón */
-    padding: 0.8rem 1.5rem;  /* Espaciado dentro del botón */
-    text-decoration: none;  /* Elimina el subrayado */
-    border-radius: 5px;  /* Bordes redondeados */
-    transition: background-color 0.3s ease;  /* Transición suave del color de fondo */
+    display: inline-block; /* Convertir en bloque en línea */
+    background-color: var(--accent-color); /* Color de fondo */
+    color: var(--text-color); /* Color del texto */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave en color de fondo */
 }
 
+/* Estilo para el botón en hover */
 .hero__cta:hover {
-    background-color: var(--accent-dark);  /* Cambia el color de fondo al pasar el cursor */
+    background-color: var(--accent-dark); /* Cambiar color en hover */
 }
 
-/* Featured products */
+/* Estilos para los productos destacados */
 .featured-products {
-    padding: 4rem 0;  /* Espaciado vertical */
-    background-color: var(--background-light);  /* Fondo claro */
+    padding: 4rem 0; /* Espaciado vertical */
+    background-color: var(--background-light); /* Fondo claro */
 }
 
+/* Título de los productos destacados */
 .featured-products__title {
-    text-align: center;  /* Centra el título */
-    margin-bottom: 2rem;  /* Añade espacio debajo del título */
-    color: var(--text-color);  /* Color del texto */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 2rem; /* Espaciado debajo */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Estilos para la lista de productos destacados */
 .featured-products__list {
-    list-style: none;  /* Elimina los puntos de lista */
-    padding: 0;  /* Elimina el padding */
-    display: grid;  /* Usa un sistema de cuadrícula para los productos */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Crea columnas que se ajustan automáticamente */
-    gap: 2rem;  /* Añade espacio entre las tarjetas de productos */
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+    display: grid; /* Usar grid para organizar los productos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas dinámicas */
+    gap: 2rem; /* Espaciado entre las celdas */
 }
 
+/* Estilos para las tarjetas de productos */
 .product-card {
-    border: 1px solid var(--accent-color);  /* Borde alrededor de cada tarjeta */
-    border-radius: 5px;  /* Bordes redondeados */
-    padding: 1rem;  /* Espaciado interno */
-    text-align: center;  /* Centra el texto dentro de la tarjeta */
-    background-color: var(--background-light);  /* Fondo claro */
+    border: 1px solid var(--accent-color); /* Borde con color de acento */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    background-color: var(--background-light); /* Fondo claro */
 }
 
+/* Estilo para la imagen del producto */
 .product-card__img {
-    max-width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
-    height: auto;  /* Ajusta la altura automáticamente */
+    max-width: 100%; /* Ajustar al ancho máximo disponible */
+    height: auto; /* Mantener la proporción */
 }
 
+/* Estilo para el título del producto */
 .product-card__title {
-    margin: 1rem 0;  /* Añade espacio arriba y abajo del título */
-    color: var(--text-color);  /* Color del texto */
+    margin: 1rem 0; /* Espaciado arriba y abajo */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Estilo para la descripción del producto */
 .product-card__description {
-    margin-bottom: 1rem;  /* Añade espacio debajo de la descripción */
-    color: var(--text-color);  /* Color del texto */
+    margin-bottom: 1rem; /* Espaciado debajo */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Estilo para el precio del producto */
 .product-card__price {
-    font-weight: bold;  /* Hace que el precio sea en negrita */
-    color: var(--accent-color);  /* Color del precio */
-    margin: 0.5rem 0;  /* Añade margen arriba y abajo del precio */
+    font-weight: bold; /* Negrita */
+    color: var(--accent-color); /* Color de acento */
+    margin: 0.5rem 0; /* Espaciado arriba y abajo */
 }
 
+/* Estilo para el enlace de cada tarjeta de producto */
 .product-card__link {
-    display: inline-block;  /* Hace que el enlace sea en línea */
-    background-color: var(--background-color);  /* Fondo del enlace */
-    color: var(--text-light);  /* Color del texto en el enlace */
-    padding: 0.5rem 1rem;  /* Espaciado dentro del enlace */
-    text-decoration: none;  /* Elimina el subrayado */
-    border-radius: 3px;  /* Bordes redondeados */
-    transition: background-color 0.3s ease;  /* Transición suave al cambiar el color de fondo */
+    display: inline-block; /* Convertir en bloque en línea */
+    background-color: var(--background-color); /* Fondo del enlace */
+    color: var(--text-light); /* Color del texto */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 3px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave en el color de fondo */
 }
 
+/* Estilo para el enlace al pasar el ratón */
 .product-card__link:hover {
-    background-color: var(--accent-dark);  /* Cambia el color de fondo al pasar el cursor */
+    background-color: var(--accent-dark); /* Cambiar color en hover */
 }
 
-/* News section */
+/* Estilos para la sección de noticias */
 .news {
-    background-color: var(--accent-color);  /* Fondo de la sección de noticias */
-    padding: 4rem 0;  /* Espaciado vertical */
+    background-color: var(--accent-color); /* Fondo con color de acento */
+    padding: 4rem 0; /* Espaciado vertical */
 }
 
+/* Título de la sección de noticias */
 .news__title {
-    text-align: center;  /* Centra el título */
-    margin-bottom: 2rem;  /* Añade espacio debajo del título */
-    color: var(--text-color);  /* Color del texto */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 2rem; /* Espaciado debajo */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Estilos para la lista de noticias */
 .news__list {
-    list-style: none;  /* Elimina los puntos de lista */
-    padding: 0;  /* Elimina el padding */
-    display: grid;  /* Usa una cuadrícula para las noticias */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Crea columnas que se ajustan automáticamente */
-    gap: 2rem;  /* Añade espacio entre las tarjetas de noticias */
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+    display: grid; /* Usar grid para organizar las noticias */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas dinámicas */
+    gap: 2rem; /* Espaciado entre las celdas */
 }
 
+/* Estilo para las tarjetas de noticias */
 .news-card {
-    background-color: var(--background-light);  /* Fondo claro para las tarjetas de noticias */
-    border: 1px solid var(--background-color);  /* Borde alrededor de la tarjeta */
-    border-radius: 5px;  /* Bordes redondeados */
-    padding: 1.5rem;  /* Espaciado dentro de la tarjeta */
+    background-color: var(--background-light); /* Fondo claro */
+    border: 1px solid var(--background-color); /* Borde del color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 1.5rem; /* Espaciado interno */
 }
 
+/* Título de la tarjeta de noticia */
 .news-card__title {
-    margin-top: 0;  /* Elimina el margen superior */
-    color: var(--text-color);  /* Color del texto */
+    margin-top: 0; /* Sin margen arriba */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Excerpt o resumen de la noticia */
 .news-card__excerpt {
-    color: var(--text-color);  /* Color del texto de la descripción */
+    color: var(--text-color); /* Color del texto */
 }
 
+/* Estilo para el enlace en las tarjetas de noticias */
 .news-card__link {
-    display: inline-block;  /* Hace que el enlace sea en línea */
-    color: var(--background-color);  /* Color del enlace */
-    text-decoration: none;  /* Elimina el subrayado */
-    font-weight: bold;  /* Hace que el enlace sea en negrita */
-    margin-top: 1rem;  /* Añade espacio encima del enlace */
+    display: inline-block; /* Convertir en bloque en línea */
+    color: var(--background-color); /* Color de enlace */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita */
+    margin-top: 1rem; /* Espaciado arriba */
 }
 
-/* Footer */
+/* Estilos para el pie de página */
 .footer {
-    background-color: var(--background-color);  /* Fondo del pie de página */
-    color: var(--text-light);  /* Color del texto */
-    padding: 3rem 1rem 1rem;  /* Espaciado interno */
+    background-color: var(--background-color); /* Fondo de pie de página */
+    color: var(--text-light); /* Color del texto */
+    padding: 3rem 1rem 1rem; /* Espaciado interno */
 }
 
+/* Estilo para las secciones dentro del pie de página */
 .footer__section {
-    margin-bottom: 2rem;  /* Añade espacio debajo de cada sección */
+    margin-bottom: 2rem; /* Espaciado debajo de cada sección */
 }
 
+/* Título dentro del pie de página */
 .footer__title {
-    margin-top: 0;  /* Elimina el margen superior */
-    color: var(--accent-color);  /* Color de los títulos en el pie de página */
+    margin-top: 0; /* Sin margen arriba */
+    color: var(--accent-color); /* Color de acento */
 }
 
+/* Estilo para la lista de redes sociales en el pie */
 .footer__social-list {
-    list-style: none;  /* Elimina los puntos de lista */
-    padding: 0;  /* Elimina el padding */
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
 }
 
+/* Estilo para cada enlace de redes sociales */
 .footer__social-link {
-    display: block;  /* Hace que cada enlace se muestre en bloque */
-    color: var(--text-light);  /* Color del texto de los enlaces */
-    text-decoration: none;  /* Elimina el subrayado */
-    margin-bottom: 0.5rem;  /* Añade espacio debajo de cada enlace */
+    display: block; /* Mostrar como bloque */
+    color: var(--text-light); /* Color blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    margin-bottom: 0.5rem; /* Espaciado debajo */
 }
 
+/* Formulario para suscripción en el pie */
 .footer__form {
-    display: flex;  /* Usa flexbox para la disposición del formulario */
+    display: flex; /* Usar flexbox para organizar los elementos */
 }
 
+/* Estilo para el campo de entrada del formulario */
 .footer__input {
-    flex-grow: 1;  /* Hace que el campo de texto ocupe el espacio disponible */
-    padding: 0.5rem;  /* Añade espacio dentro del campo */
-    border: none;  /* Elimina el borde por defecto */
-    border-radius: 3px 0 0 3px;  /* Bordes redondeados en el lado izquierdo */
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    padding: 0.5rem; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 3px 0 0 3px; /* Bordes redondeados solo a la izquierda */
 }
 
+/* Estilo para el botón de suscripción */
 .footer__button {
-    background-color: var(--accent-color);  /* Fondo del botón */
-    color: var(--text-color);  /* Color del texto */
-    border: none;  /* Elimina el borde por defecto */
-    padding: 0.5rem 1rem;  /* Añade espacio dentro del botón */
-    cursor: pointer;  /* Cambia el cursor cuando se pasa sobre el botón */
-    border-radius: 0 3px 3px 0;  /* Bordes redondeados en el lado derecho */
+    background-color: var(--accent-color); /* Fondo con color de acento */
+    color: var(--text-color); /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    border-radius: 0 3px 3px 0; /* Bordes redondeados solo a la derecha */
 }
 
+/* Información de derechos de autor en el pie */
 .footer__copyright {
-    text-align: center;  /* Centra el texto del copyright */
-    margin-top: 2rem;  /* Añade espacio encima */
-    font-size: 0.9rem;  /* Reduce el tamaño de la fuente */
-    color: var(--text-light);  /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-top: 2rem; /* Espaciado arriba */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: var(--text-light); /* Color blanco */
 }
 
-/* Responsive design */
+/* Estilos para la versión móvil (menos de 768px) */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;  /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+        flex-direction: column; /* Alinear los elementos verticalmente */
     }
 
     .header__logo {
-        margin-bottom: 1rem;  /* Añade margen inferior */
+        margin-bottom: 1rem; /* Espaciado debajo del logo */
     }
 
     .header__nav-list {
-        flex-direction: column;  /* Organiza los enlaces en columna */
-        align-items: center;  /* Centra los enlaces */
+        flex-direction: column; /* Alinear los ítems de la lista verticalmente */
+        align-items: center; /* Centrar los elementos */
     }
 
     .header__nav-item {
-        margin: 0.5rem 0;  /* Añade margen vertical entre los enlaces */
+        margin: 0.5rem 0; /* Espaciado entre los ítems */
     }
 
     .footer {
-        text-align: center;  /* Centra el texto del pie de página */
+        text-align: center; /* Centrar el texto en el pie */
     }
 
     .footer__form {
-        justify-content: center;  /* Centra el formulario */
+        justify-content: center; /* Centrar el formulario */
     }
 }
 
-/* Dark mode */
+/* Estilos para el modo oscuro */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #2a3c6d;  /* Fondo oscuro */
-        --text-color: #f0f0f0;  /* Texto claro */
-        --accent-color: #7280c7;  /* Color de acento en modo oscuro */
-        --background-light: #1a2540;  /* Fondo claro en modo oscuro */
-        --text-light: #ffffff;  /* Texto blanco */
-        --accent-dark: #5668b3;  /* Color oscuro de acento */
+        --background-color: #2a3c6d; /* Fondo oscuro */
+        --text-color: #f0f0f0; /* Texto claro */
+        --accent-color: #7280c7; /* Acento oscuro */
+        --background-light: #1a2540; /* Fondo muy oscuro */
+        --text-light: #ffffff; /* Texto blanco */
+        --accent-dark: #5668b3; /* Acento oscuro */
     }
 
+    /* Estilos de los productos y noticias en modo oscuro */
     .product-card,
     .news-card {
-        background-color: var(--background-color);  /* Fondo oscuro en tarjetas */
-        border-color: var(--accent-color);  /* Borde en color acentuado */
+        background-color: var(--background-color); /* Fondo oscuro para tarjetas */
+        border-color: var(--accent-color); /* Borde en color de acento */
     }
 
     .news {
-        background-color: var(--accent-dark);  /* Fondo oscuro para la sección de noticias */
+        background-color: var(--accent-dark); /* Fondo oscuro para la sección de noticias */
     }
 
     .news-card__link {
-        color: var(--accent-color);  /* Color del enlace en modo oscuro */
+        color: var(--accent-color); /* Enlaces con color de acento en modo oscuro */
     }
 }
 
 /* Estilos para la página de productos */
 .product-list {
-    padding: 4rem 0;  /* Espaciado vertical */
-    background-color: var(--background-light);  /* Fondo claro */
+    padding: 4rem 0; /* Espaciado vertical */
+    background-color: var(--background-light); /* Fondo claro */
 }
 
 /* Estilos para la página de servicios */
 .services {
-    padding: 4rem 0;  /* Espaciado vertical */
-    background-color: var(--background-light);  /* Fondo claro */
+    padding: 4rem 0; /* Espaciado vertical */
+    background-color: var(--background-light); /* Fondo claro */
 }
 
 /* Estilos para la página de contacto */
 .contact {
-    padding: 4rem 0;  /* Espaciado vertical */
-    background-color: var(--background-light);  /* Fondo claro */
+    padding: 4rem 0; /* Espaciado vertical */
+    background-color: var(--background-light); /* Fondo claro */
 }
 
 /* Estilos para los héroes específicos de cada página */
 .hero--products,
 .hero--services,
 .hero--contact {
-    background-color: var(--accent-color);  /* Fondo específico para los héroes de cada página */
+    background-color: var(--accent-color); /* Fondo de acento */
 }
 
-/* Imagen de fondo */
+/* Imagen de fondo en el body */
 body {
-    background-image: url("assets/fondoInformatica.jpg"); /* Ruta de la imagen de fondo */
-    background-size: cover;  /* La imagen cubre toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-image: url("assets/fondoInformatica.jpg"); /* Fondo personalizado */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
 }
 
+/* Estilo para la imagen del producto al pasar el ratón */
 .product-card__img:hover {
-    width: 100%;
-    transition: all 300ms;
-    position: relative;
+    width: 100%; /* Ampliar la imagen al 100% */
+    transition: all 300ms; /* Transición suave */
+    position: relative; /* Para aplicar transformaciones */
 }
-.product-card__img:hover {
-    transform: scale(1.05);
 
+/* Animación para hacer zoom en la imagen al pasar el ratón */
+.product-card__img:hover {
+    transform: scale(1.05); /* Escalar la imagen */
 }
+
+/* Animación para el título del producto */
 .product-card__title:hover {
-
-    transform: scale(1.05)
+    transform: scale(1.05); /* Escalar el título */
 }
 
-
-/* Cambiar Modo Oscuro */
-
-.btnDark{
-    background-color: #000000;
-    border-radius: 25px;
+/* Estilos para el botón del modo oscuro */
+.btnDark {
+    background-color: #000000; /* Fondo negro */
+    border-radius: 25px; /* Bordes redondeados */
 }
+
+/* Estilos para el modo oscuro (variable personalizada) */
 :root {
-    --color-fondo-oscuro: #000000;
+    --color-fondo-oscuro: #000000; /* Fondo oscuro */
 }
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: var(--background-light); /* Fondo claro */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para las etiquetas dentro del formulario de contacto */
+.contact-form__label {
+    display: block; /* Convertir en bloque */
+    margin-bottom: 0.5rem; /* Espaciado debajo */
+    color: var(--text-color); /* Color del texto */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.contact-form__input,
+.contact-form__select,
+.contact-form__textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0.5rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Espaciado debajo */
+    border: 1px solid var(--accent-color); /* Borde de color de acento */
+    border-radius: 3px; /* Bordes redondeados */
+    background-color: var(--background-light); /* Fondo claro */
+    color: var(--text-color); /* Color del texto */
+}
+
+/* Estilo para el área de texto (textarea) */
+.contact-form__textarea {
+    height: 150px; /* Altura personalizada */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+/* Estilo para el botón de envío del formulario */
+.contact-form__submit {
+    background-color: var(--accent-color); /* Fondo con color de acento */
+    color: var(--text-color); /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave en el color */
+}
+
+/* Estilo para el botón de envío al pasar el ratón */
+.contact-form__submit:hover {
+    background-color: var(--accent-dark); /* Cambiar color en hover */
+}
+
+
 
