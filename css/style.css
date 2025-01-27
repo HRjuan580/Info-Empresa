@@ -23,16 +23,7 @@ body {
     margin: 0;  /* Elimina el margen por defecto */
     padding: 0;  /* Elimina el padding por defecto */
 }
-/* Cambiar Modo Oscuro */
 
-.btnDark{
-    background-color: #000000;
-    border-radius: 25px;
-}
-
-:root {
-    --color-fondo-oscuro: #000000;
-}
 /* Header */
 .header {
     background-color: var(--background-color);  /* Color de fondo del encabezado */
@@ -352,16 +343,27 @@ body {
 }
 
 .product-card__img:hover {
-        width: 100%;
-        transition: all 300ms;
-        position: relative;
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
 }
 .product-card__img:hover {
-        transform: scale(1.05);
+    transform: scale(1.05);
 
 }
 .product-card__title:hover {
 
-        transform: scale(1.05)
+    transform: scale(1.05)
+}
+
+
+/* Cambiar Modo Oscuro */
+
+.btnDark{
+    background-color: #000000;
+    border-radius: 25px;
+}
+:root {
+    --color-fondo-oscuro: #000000;
 }
 
