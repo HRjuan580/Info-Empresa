@@ -23,7 +23,16 @@ body {
     margin: 0;  /* Elimina el margen por defecto */
     padding: 0;  /* Elimina el padding por defecto */
 }
+/* Cambiar Modo Oscuro */
 
+.btnDark{
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+:root {
+    --color-fondo-oscuro: #000000;
+}
 /* Header */
 .header {
     background-color: var(--background-color);  /* Color de fondo del encabezado */

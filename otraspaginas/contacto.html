@@ -7,15 +7,17 @@
   <title>Info-Empresa</title> <!-- Título de la página -->
   <link rel="stylesheet" href="../css/style.css"> <!-- Enlace al archivo CSS para dar estilo a la página -->
   <link rel="icon" href="../assets/informatica.png"> <!-- Icono de la página en la pestaña del navegador -->
+  <script src="../otraspaginas/cambiarmodo.js"></script>
 </head>
 
 <body>
 <!-- Cabecera con el logo y menú de navegación -->
 <header class="header">
+  <button id="modeOscuro" class="btnDark" onclick="toggeDarkMode()">🌓</button>
   <img src="../assets/desarrollador.png" alt="Logo Info-Empresa " class="header__logo"> <!-- Logo de la empresa -->
   <nav class="header__nav">
     <ul class="header__nav-list">
-      <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Inicio</a></li> <!-- Enlace a la página de inicio -->
+      <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li> <!-- Enlace a la página de inicio -->
       <li class="header__nav-item"><a href="./productos.html" class="header__nav-link">Productos</a></li> <!-- Enlace a la página de productos -->
       <li class="header__nav-item"><a href="./servicios.html" class="header__nav-link">Servicios</a></li> <!-- Enlace a la página de servicios -->
       <li class="header__nav-item"><a href="./contacto.html" class="header__nav-link">Contacto</a></li> <!-- Enlace a la página de contacto -->
