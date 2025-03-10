@@ -13,5 +13,22 @@ function toggleDarkMode() {
     }
 }
 
-
+// Añadir los estilos para el modo oscuro
+const darkModeStyles = document.createElement("style")
+darkModeStyles.textContent = `
+  .dark-mode {
+    background-color: #1a1a2e;
+    color: #e6e6e6;
+  }
+  
+  .dark-mode .header, .dark-mode .footer {
+    background-color: #16213e;
+  }
+  
+  .dark-mode .product-card, .dark-mode .news-card {
+    background-color: #16213e;
+    border-color: #4464ad;
+  }
+`
+document.head.appendChild(darkModeStyles)
 
