@@ -112,3 +112,10 @@ Este proyecto web TechnoShop muestra un enfoque profesional y bien fundamentado 
 Las decisiones de diseño y las tecnologías utilizadas aseguran que el proyecto sea compatible con los estándares actuales, fácil de mantener y capaz de ofrecer una experiencia de usuario excepcional.
 
 Este README proporciona una visión detallada de todas las decisiones tomadas durante el desarrollo del proyecto, asegurando que se cumplen todos los criterios de evaluación y las buenas prácticas vistas en clase.
+# JavaScript
+
+1. Modo oscuro
+Es una funcion que sirve para cambiar el modo claro y oscuro de la pagina web y cambia el icono segun el estado.
+
+
+
