@@ -17,17 +17,17 @@ function toggleDarkMode() {
 const darkModeStyles = document.createElement("style")
 darkModeStyles.textContent = `
   .dark-mode {
-    background-color: #1a1a2e;
-    color: #e6e6e6;
+    background-color: #1a1a2e; //  Color azul oscuro usado como fondo general del modo oscuro
+    color: #e6e6e6; // gris claro para el texto en modo oscuro
   }
   
   .dark-mode .header, .dark-mode .footer {
-    background-color: #16213e;
+    background-color: #16213e; //  Color azul oscuro fuerte usado para el encabezado y pie de pagina
   }
   
   .dark-mode .product-card, .dark-mode .news-card {
-    background-color: #16213e;
-    border-color: #4464ad;
+    background-color: #16213e; 
+    border-color: #4464ad; // Color azul ligero para el borde de las tarejetas
   }
 `
 document.head.appendChild(darkModeStyles)
