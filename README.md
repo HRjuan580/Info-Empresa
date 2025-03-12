@@ -146,6 +146,8 @@ let productos = ["Laptop Pro X", "Desktop Gamer", "Tablet Flex"];
 
 5. Seleccionar y manipular elementos del DOM
 He usado querySelector y querySelectorAll para seleccionar elementos del DOM
+querySelector = para seleccionar el primer elemento que coincide con un selector CSS.
+querySelectorAll = para seleccionar todos los elementos que coinciden con un selector CSS, sirve para manipular varios elementos
 
 Ejemplo del codigo .js: {
 
