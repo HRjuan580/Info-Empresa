@@ -111,11 +111,80 @@ Este proyecto web TechnoShop muestra un enfoque profesional y bien fundamentado 
 
 Las decisiones de diseño y las tecnologías utilizadas aseguran que el proyecto sea compatible con los estándares actuales, fácil de mantener y capaz de ofrecer una experiencia de usuario excepcional.
 
-Este README proporciona una visión detallada de todas las decisiones tomadas durante el desarrollo del proyecto, asegurando que se cumplen todos los criterios de evaluación y las buenas prácticas vistas en clase.
+
+
 # JavaScript
 
 1. Modo oscuro
-Es una funcion que sirve para cambiar el modo claro y oscuro de la pagina web y cambia el icono segun el estado.
+Para el modo oscuro he usado classList.toggle y classList.contains para el manejo del modo oscuro, para hacer una buena practica para manipular clases
+
+2. Eliminar un producto de la lista
+He usado remove() para eliminar un elemto del DOM 
+
+Ejemplo del codigo .js: {
+
+const primerProducto = document.querySelector(".product-card");
+primerProducto.remove();
+
+}
+
+3. Cambiar el color del fondo del header
+He usado style para cambiar el estilo directamente
+
+Ejemplo del codigo .js: {
+const header = document.querySelector(".header");
+header.style.backgroundColor = "#333";
+}
+
+4. Variables let y const
+He usado const para valores que no cambian y let para valores que pueden variar en el futuro del proyecto
+
+Ejemplo del codigo .js: {
+const nombre = "TechnoShop";
+let productos = ["Laptop Pro X", "Desktop Gamer", "Tablet Flex"];
+}
+
+5. Seleccionar y manipular elementos del DOM
+He usado querySelector y querySelectorAll para seleccionar elementos del DOM
+
+Ejemplo del codigo .js: {
+
+const heroTitle = document.querySelector(".hero__title");
+heroTitle.textContent = "Nuevo titulo";
+heroTitle.style.color = "red";
+
+const productCards = document.querySelectorAll(".product-card");
+productCards.forEach((card) => {
+card.style.backgroundColor = "lightpink";
+});
+
+}
+
+Usado atributos como setAttribute para cambiar el atributo src de la imagen
+
+Ejemplo del codigo .js: {
+const logo = document.querySelector(".header__logo");
+logo.setAttribute("src", "assets/hacker.png");
+}
+
+6. Formulario de validacion
+He usado addEventListener para ver el evento submit
+
+Ejemplo del codigo js.: {
+const formulario = document.querySelector(".contact-form");
+formulario.addEventListener("submit", (event) => {
+// Código para validar el formulario
+});
+
+}
+
+7. He usado la herramienta https://validator.w3.org/#validate_by_uri
+He usado esa herramienta para validar mi codigo y que todo este bien. Lo unico que me dice que tengo error son en los comentarios pero lo demas esta perfecto
+
+
+
+
+
 
 
 

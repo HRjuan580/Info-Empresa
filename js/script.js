@@ -1,4 +1,4 @@
-// 1. Modo Oscuro
+// Modo Oscuro
 function toggleDarkMode() {
     // Cambia entre modo claro y oscuro alternando la clase "dark-mode" en el body
     document.body.classList.toggle("dark-mode");
