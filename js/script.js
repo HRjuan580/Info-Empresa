@@ -1,6 +1,6 @@
 // Modo Oscuro
 function toggleDarkMode() {
-    console.log("Modo oscuro activado/desactivado");
+    console.log("Modo oscuro activado/desactivado"); // Mensaje que sale por consola del navegador o ID
     // Cambia entre modo claro y oscuro alternando la clase "dark-mode" en el body
     document.body.classList.toggle("dark-mode");
 
@@ -61,30 +61,30 @@ console.log("Lista de productos:", productos); // Para ver el contenido del arra
 // Seleccionar un elemento por su clase
 const heroTitle = document.querySelector(".hero__title");
 if (heroTitle) { // Verifica si el elemento existe
-    console.log("Cambiado el titulo");
+    console.log("Cambiado el titulo"); // Mensaje que sale por consola del navegador o ID
     heroTitle.textContent = "NUEVO TITULO"; // Cambia el texto del título
-    console.log("Cambiando el color del titulo")
+    console.log("Cambiando el color del titulo") // Mensaje que sale por consola del navegador o ID
     heroTitle.style.color = "red"; // Cambia el color del texto a rojo
 }
 
 // Seleccionar todos los elementos de una clase
 const productCards = document.querySelectorAll(".product-card");
 if (productCards) { // Verifica si hay elementos seleccionados
-    console.log(`Cambiando el fondo de ${productos.length}`); // Para ber cuantas tarjetas se modifican
+    console.log(`Cambiando el fondo de ${productos.length}`); // Mensaje que sale por consola del navegador o ID
     productCards.forEach((card) => {
         card.style.backgroundColor = "lightpink"; // Cambia el fondo de todas las tarjetas a rosa claro
     });
 } else {
-    console.log("No se ha encontrado ninguna tarjeta de productos");
+    console.log("No se ha encontrado ninguna tarjeta de productos"); // Mensaje que sale por consola del navegador o ID
 }
 
 // Cambiar el logo del header
 const logo = document.querySelector(".header__logo");
 if (logo) { // Verifica si el logo existe
-    console.log("Cambiado la imagen del icono de la empresa ");
+    console.log("Cambiado la imagen del icono de la empresa "); // Mensaje que sale por consola del navegador o ID
     logo.setAttribute("src", "assets/hacker.png"); // Cambia la imagen del logo a "hacker.png"
 } else {
-    console.log("No se ha encontrado ningun logo");
+    console.log("No se ha encontrado ningun logo"); // Mensaje que sale por consola del navegador o ID
 }
 
 
