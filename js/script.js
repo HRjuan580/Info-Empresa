@@ -68,23 +68,7 @@ if (logo) { // Verifica si el logo existe
     logo.setAttribute("src", "assets/hacker.png"); // Cambia la imagen del logo a "hacker.png"
 }
 
-// Formulario de validación
-const formulario = document.querySelector(".contact-form");
-if (formulario) { // Verifica si el formulario existe
-    formulario.addEventListener("submit", (event) => {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
-        // Aquí podrías añadir la lógica de validación del formulario
-        const email = document.getElementById("email").value; // Obtén el valor del campo de correo electrónico
-
-        if (!email.includes("@")) { // Verifica si el correo no contiene "@"
-            alert("Por favor, introduce un correo electrónico válido."); // Muestra un mensaje de error
-        } else {
-            alert("Formulario enviado con éxito."); // Muestra un mensaje de éxito
-            formulario.reset(); // Limpia el formulario después de enviarlo
-        }
-    });
-}
 
 
 

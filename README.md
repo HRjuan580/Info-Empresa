@@ -169,18 +169,8 @@ const logo = document.querySelector(".header__logo");
 logo.setAttribute("src", "assets/hacker.png");
 }
 
-6. Formulario de validacion
-He usado addEventListener para ver el evento submit
 
-Ejemplo del codigo js.: {
-const formulario = document.querySelector(".contact-form");
-formulario.addEventListener("submit", (event) => {
-// Código para validar el formulario
-});
-
-}
-
-7. He usado la herramienta https://validator.w3.org/#validate_by_uri
+6. He usado la herramienta https://validator.w3.org/#validate_by_uri
 He usado esa herramienta para validar mi codigo y que todo este bien. Lo unico que me dice que tengo error son en los comentarios pero lo demas esta perfecto
 
 
