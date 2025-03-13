@@ -169,8 +169,10 @@ const logo = document.querySelector(".header__logo");
 logo.setAttribute("src", "assets/hacker.png");
 }
 
+6. Console log
+He añadido console.log para imprimir mensajes por la consola del navegador o terminal de un ID
 
-6. He usado la herramienta https://validator.w3.org/#validate_by_uri
+7. He usado la herramienta https://validator.w3.org/#validate_by_uri
 He usado esa herramienta para validar mi codigo y que todo este bien. Lo unico que me dice que tengo error son en los comentarios pero lo demas esta perfecto
 
 
