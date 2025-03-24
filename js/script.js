@@ -15,22 +15,9 @@ function toggleDarkMode() {
 
 // Añadir los estilos para el modo oscuro dinámicamente
 const darkModeStyles = document.createElement("style");
-darkModeStyles.textContent = `
-  .dark-mode {
-    background-color: #1a1a2e; // Color azul oscuro usado como fondo general del modo oscuro
-    color: #e6e6e6; // Gris claro para el texto en modo oscuro
-  }
-  
-  .dark-mode .header, .dark-mode .footer {
-    background-color: #16213e; // Color azul oscuro fuerte usado para el encabezado y pie de página
-  }
-  
-  .dark-mode .product-card, .dark-mode .news-card {
-    background-color: #16213e; // Fondo oscuro para las tarjetas de productos y noticias
-    border-color: #4464ad; // Color azul ligero para el borde de las tarjetas
-  }
-`;
+;
 document.head.appendChild(darkModeStyles); // Añade los estilos al head del documento
+
 
 // Eliminar un producto de la lista
 const primerProducto = document.querySelector(".product-card");
@@ -86,6 +73,7 @@ if (logo) { // Verifica si el logo existe
 } else {
     console.log("No se ha encontrado ningun logo"); // Mensaje que sale por consola del navegador o ID
 }
+
 
 
 
