@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info-Empresa - Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/informatica.png">
+</head>
+<body>
+<header class="header">
+    <button id="modeOscuro" class="btnDark" onclick="toggleDarkMode()">🌓</button>
+    <img src="assets/desarrollador.png" alt="Logo Info-Empresa" class="header__logo">
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="Info-Empresa.html" class="header__nav-link">Inicio</a></li>
+            <li class="header__nav-item"><a href="productos.html" class="header__nav-link">Productos</a></li>
+            <li class="header__nav-item"><a href="servicios.html" class="header__nav-link">Servicios</a></li>
+            <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+            <li class="header__nav-item">
+                <a href="carrito.html" class="header__nav-link cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1 class="hero__title">Tu Carrito TechnoShop</h1>
+        <p class="hero__subtitle">Gestiona tus productos antes de comprar</p>
+        <a href="productos.html" class="hero__cta">Seguir comprando</a>
+    </section>
+
+    <section class="cart-section">
+        <h2 class="visually-hidden">Contenido del carrito</h2>
+
+        <article class="cart-actions">
+            <button class="btn-clear" onclick="clearCart()">
+                <i class="fas fa-trash-alt"></i> Vaciar carrito
+            </button>
+            <p class="items-count">Tienes <span id="itemsCount">0</span> productos</p>
+        </article>
+
+        <ul class="cart-items">
+            <!-- Productos se añadirán aquí dinámicamente -->
+        </ul>
+
+        <article class="cart-summary">
+            <section class="summary-details">
+                <p class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotalAmount">0.00€</span>
+                </p>
+                <p class="summary-row">
+                    <span>Envío:</span>
+                    <span id="shippingCost">5.99€</span>
+                </p>
+                <p class="summary-row total-row">
+                    <span>Total:</span>
+                    <span id="totalAmount">0.00€</span>
+                </p>
+            </section>
+
+            <button class="checkout-btn" onclick="checkout()">
+                <i class="fas fa-credit-card"></i> Finalizar compra
+            </button>
+        </article>
+    </section>
+
+    <section class="recommendations">
+        <h2 class="section-title">Productos recomendados</h2>
+        <ul class="products-grid">
+            <!-- Productos recomendados -->
+        </ul>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
