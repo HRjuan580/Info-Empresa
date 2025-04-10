@@ -31,34 +31,37 @@
 
     <section class="featured-products"> <!-- Sección de productos destacados -->
         <h2 class="featured-products__title">Productos destacados</h2> <!-- Título de la sección -->
+        <button onclick="alternarProductos()" id="filtroProductosBtn">Ocultar productos</button>
         <ul class="featured-products__list"> <!-- Lista de productos destacados -->
             <!-- Producto 1 -->
             <li class="product-card">
                 <img src="./assets/Laptop%20Pro%20X.jpg" alt="Laptop de última generación" class="product-card__img"> <!-- Imagen del producto -->
                 <h3 class="product-card__title">Laptop Pro X</h3> <!-- Nombre del producto -->
                 <p class="product-card__description">Potente laptop para profesionales</p> <!-- Descripción corta del producto -->
-                <a href="carrito.html" class="product-card__link">Añadir al carrito</a> <!-- Enlace para más detalles -->
+                <button class="product-card__link" onclick="agregarAlCarrito('Laptop Pro X')">Añadir al carrito</button>
+                <!-- Enlace para más detalles -->
             </li>
             <!-- Producto 2 -->
             <li class="product-card">
                 <img src="./assets/Desktop%20Gamer.jpg" alt="PC de escritorio de alto rendimiento" class="product-card__img">
                 <h3 class="product-card__title">Desktop Gamer</h3>
                 <p class="product-card__description">Máximo rendimiento para gaming</p>
-                <a href="carrito.html" class="product-card__link">Añadir al carrito</a>
+                <button class="product-card__link" onclick="agregarAlCarrito('Desktop Gamer')">Añadir al carrito</button>
+
             </li>
             <!-- Producto 3 -->
             <li class="product-card">
                 <img src="./assets/tablet.jpg" alt="Tablet versátil" class="product-card__img">
                 <h3 class="product-card__title">Tablet Flex</h3>
                 <p class="product-card__description">Versatilidad en tus manos</p>
-                <a href="carrito.html" class="product-card__link">Añadir al carrito</a>
+                <button class="product-card__link" onclick="agregarAlCarrito('Tablet Flex')">Añadir al carrito</button>
             </li>
         </ul>
     </section>
 
-    <section class="gallery">
+    <section class="galeria">
         <h2>Galería de Imágenes</h2>
-        <p id="galleryContainer"></p>
+        <p id="contenedorgaleria"></p>
         <button onclick="addImage()">Agregar Imagen</button>
     </section>
 

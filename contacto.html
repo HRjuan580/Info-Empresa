@@ -6,9 +6,9 @@
   <title>Info-Empresa - Formulario de Reparación</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/informatica.png">
-
 </head>
 <body>
+
 <header class="header">
   <button id="modeOscuro" class="btnDark" onclick="toggleDarkMode()">🌓</button>
   <img src="assets/desarrollador.png" alt="Logo Info-Empresa" class="header__logo">
@@ -23,18 +23,19 @@
 </header>
 
 <main>
-  <section class="hero"> <!-- Sección destacada de bienvenida -->
-    <h1 class="hero__title">Bienvenido a TechnoShop</h1> <!-- Título principal de la página -->
-    <p class="hero__subtitle">Tu tienda de confianza para equipos informáticos y servicios de mantenimiento</p> <!-- Subtítulo de la bienvenida -->
-    <a href="productos.html" class="hero__cta">Ver productos</a> <!-- Enlace de llamada a la acción (CTA) para ver los productos -->
+  <section class="hero">
+    <h1 class="hero__title">Bienvenido a TechnoShop</h1>
+    <p class="hero__subtitle">Tu tienda de confianza para equipos informáticos y servicios de mantenimiento</p>
+    <a href="productos.html" class="hero__cta">Ver productos</a>
   </section>
+
   <section class="hero hero--contact">
     <h1 class="hero__title">Formulario de Reparación</h1>
     <p class="hero__subtitle">Solicita la reparación de tu equipo informático</p>
   </section>
 
   <section class="contact">
-    <form class="contact-form" action="#" method="POST">
+    <form class="contact-form" id="formReparacion" novalidate>
       <label for="nombre" class="contact-form__label">Nombre completo:</label>
       <input type="text" id="nombre" name="nombre" required class="contact-form__input">
 
@@ -64,27 +65,9 @@
       <input type="date" id="fecha-preferida" name="fecha-preferida" class="contact-form__input">
 
       <button type="submit" class="contact-form__submit">Enviar solicitud</button>
+      <p id="mensajeForm" class="mensaje-form"></p>
     </form>
   </section>
-
-  <footer>
-    <div class="contacto-footer">
-      <div class="contacto-header">Datos de Contacto</div>
-      <div class="contacto-contenido">
-        <div class="contacto-item">
-          <strong>Teléfono:</strong> <span>913320929</span>
-        </div>
-        <div class="contacto-item">
-          <strong>E-mail:</strong> <span>tienda@tacnet.es</span>
-        </div>
-        <div class="contacto-item">
-          <strong>Horario:</strong> <span>L a V: 10:00-14:00 y 16:30-20:00 | S: 10:30-14:00</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
 </main>
 
 <footer class="footer">
@@ -113,6 +96,7 @@
 
   <p class="footer__copyright">&copy; 2025 Info-Empresa. Todos los derechos reservados.</p>
 </footer>
+
 <script src="js/script.js"></script>
 </body>
 </html>
