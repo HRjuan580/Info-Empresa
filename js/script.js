@@ -75,10 +75,10 @@
 //  }
 
 
+// CREAR GALERIA INTERACTIVA DONDE LAS IMAGENES PUEDAN AÑADIRSE O ELIMINARSE DINAMICAMENTE //
 
 // Aquí estamos creando un array con las imágenes que inicialmente vamos a mostrar en la galería.
 let galleryImages = [
-    'assets/img1.jpg', 'assets/img2.jpg', 'assets/img3.jpg'
 ];
 
 // Esta es la función que se encarga de mostrar todas las imágenes en la galería.
@@ -109,7 +109,7 @@ function addImage() {
     // Aquí le pedimos al usuario que ingrese la URL de la imagen que quiere agregar.
     const newImageUrl = prompt("Ingresa la URL de la nueva imagen:");
 
-    // Si el usuario no deja el campo vacío y da una URL válida, la agregamos al array de imágenes.
+    // Si no dejamos el campo vacio y la URL es valida lo agregamos a la galeria
     if (newImageUrl) {
         galleryImages.push(newImageUrl);
         // Luego de agregarla, volvemos a renderizar la galería para que aparezca la nueva imagen.
@@ -129,8 +129,99 @@ function removeImage(index) {
 document.addEventListener('DOMContentLoaded', galeria);
 
 
+// FILTRO PARA MOSTRAR U OCULTAR ELEMENTOS DE LA PAGINA//
+
+function alternarProductos() {
+    const listaProductos = document.querySelector('.featured-products__list');
+    const botonFiltro = document.getElementById('filtroProductosBtn');
+
+    if (listaProductos.style.display === 'none') {
+        listaProductos.style.display = 'flex';
+        botonFiltro.textContent = 'Ocultar productos';
+    } else {
+        listaProductos.style.display = 'none';
+        botonFiltro.textContent = 'Mostrar productos';
+    }
+}
 
 
+// DISEÑAR UN FORMULARIO DE VALIDACIÓN QUE MUESTRE UN MENSAJE DE ERROR O EXITO //
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formReparacion');
+    const mensaje = document.getElementById('mensajeForm');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita que se recargue la página
+
+            let valid = true;
+            mensaje.textContent = '';
+            mensaje.style.color = 'red';
+            submitButton.disabled = true; // Deshabilitar el botón al empezar a validar
+
+            const campos = ['nombre', 'email', 'telefono', 'tipo-equipo', 'marca', 'problema', 'fecha-preferida'];
+            campos.forEach((id) => {
+                const input = document.getElementById(id);
+                if (!input.value.trim()) {
+                    valid = false;
+                    input.style.borderColor = 'red'; // Resalta el campo con borde rojo
+                } else {
+                    input.style.borderColor = ''; // Resetea el borde si está completo
+                }
+            });
+
+            if (valid) {
+                mensaje.textContent = '✅ Solicitud enviada con éxito.';
+                mensaje.style.color = 'green';
+                form.reset();
+            } else {
+                mensaje.textContent = '❌ Por favor, completa todos los campos obligatorios.';
+            }
+
+            submitButton.disabled = false; // Habilitar el botón si la validación es correcta
+        });
+    }
+});
+
+
+
+
+// CREAR FLUJO DEL PROYECTO LIBRE//
+
+function cargarCarrito() {
+    const lista = document.querySelector('.cart-items');
+    const contador = document.getElementById('itemsCount');
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    // Limpiamos el contenido actual
+    lista.innerHTML = '';
+    // Recorremos el carrito y mostramos los productos
+    carrito.forEach((producto, indice) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <p>${producto.nombre}</p>
+            <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
+        `;
+        lista.appendChild(li);
+    });
+    // Actualizamos el contador
+    contador.textContent = carrito.length;
+}
+// Con esta funcion eliminaremos el producto del carrito//
+
+function eliminarDelCarrito(indice) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.splice(indice, 1);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    cargarCarrito();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.pathname.includes('carrito.html')) {
+        cargarCarrito();
+    }
+});
 
 
 
