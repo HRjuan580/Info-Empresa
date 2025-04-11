@@ -1,4 +1,4 @@
-/* ================= VARIABLES ================= */
+/* VARIABLES */
 :root {
     --background-color: #4464ad;
     --text-color: #393939;
@@ -11,7 +11,7 @@
     --color-fondo-oscuro: #000000;
 }
 
-/* ================= RESET & BODY ================= */
+/*  RESET & BODY  */
 body {
     font-family: var(--font-main);
     color: var(--text-color);
@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ================= HEADER ================= */
+/*  HEADER  */
 .header {
     background-color: var(--background-color);
     display: flex;
@@ -60,7 +60,7 @@ body {
     color: var(--accent-color);
 }
 
-/* ================= HERO ================= */
+/*  HERO  */
 .hero {
     background-color: var(--background-color);
     color: var(--text-light);
@@ -91,7 +91,7 @@ body {
     background-color: var(--accent-dark);
 }
 
-/* ================= PRODUCTOS ================= */
+/*  PRODUCTOS  */
 .featured-products, .product-list, .services, .contact {
     background-color: var(--background-light);
 }
@@ -128,7 +128,7 @@ body {
     transform: scale(1.05);
 }
 
-/* ================= NEWS ================= */
+/*  NEWS  */
 .news {
     background-color: var(--accent-color);
 }
@@ -141,7 +141,7 @@ body {
     margin-top: 1rem;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER  */
 .footer {
     background-color: var(--background-color);
     color: var(--text-light);
@@ -196,7 +196,7 @@ body {
     color: var(--text-light);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -224,7 +224,7 @@ body {
     }
 }
 
-/* ================= MODO OSCURO AUTOMÁTICO ================= */
+/* MODO OSCURO AUTOMÁTICO */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #2a3c6d;
@@ -248,7 +248,7 @@ body {
     }
 }
 
-/* ================= FORMULARIO CONTACTO ================= */
+/* FORMULARIO CONTACTO */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -279,7 +279,7 @@ body {
     resize: vertical;
 }
 
-/* ================= OPINIONES ================= */
+/* OPINIONES */
 .opiniones-clientes {
     width: 90%;
     max-width: 1200px;
@@ -347,7 +347,7 @@ body {
     text-decoration: underline;
 }
 
-/* ================= SORTEO FOOTER ================= */
+/* SORTEO FOOTER */
 .sorteo-footer {
     display: flex;
     justify-content: space-between;
@@ -412,7 +412,7 @@ body {
     border-radius: 5px;
 }
 
-/* ================= CONTACTO FOOTER ================= */
+/* CONTACTO FOOTER */
 .contacto-footer {
     max-width: 800px;
     margin: 20px auto;
@@ -463,7 +463,7 @@ body {
     }
 }
 
-/* ================= CERTIFICACIONES ================= */
+/* CERTIFICACIONES */
 .certificaciones {
     background-color: #f8f8f8;
     padding: 40px 0;
@@ -502,7 +502,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ================= CARRITO ================= */
+/* CARRITO */
 .cart {
     max-width: 800px;
     margin: 2rem auto;

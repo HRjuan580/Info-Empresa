@@ -111,7 +111,17 @@ Este proyecto web TechnoShop muestra un enfoque profesional y bien fundamentado 
 
 Las decisiones de diseño y las tecnologías utilizadas aseguran que el proyecto sea compatible con los estándares actuales, fácil de mantener y capaz de ofrecer una experiencia de usuario excepcional.
 
+8. Validacion del codigo HTML y CSS
 
+- Este es el codigo principal de la pagina
+![img.png](assets/img.png)
+
+- Este es el codigo CSS de todo el proyecto
+![img_2.png](assets/img_2.png)
+ 
+Validado en la pagina de validator.w3.org
+
+# PARTE 1 Y 2 PROYECTO
 
 # JavaScript
 
@@ -178,6 +188,109 @@ He usado esa herramienta para validar mi codigo y que todo este bien. Lo unico q
 
 
 
+# PARTE 3 PROYECTO
+
+1. Identificacion y clasificacion de lenguaje.
+El codigo utiliza JavaScript moderno(ES6+) como lenguaje de script de cliente.
+Ventajas que tiene de utilizalo frente a otros lenguajes son:
+- Que tiene una ejecucion en el navegador sin necesidad de procesamiento en servidor.
+- Compatibilidad con todos los navegadores modernos
+- Capacidad de manipular el DOM de forma dinamica
+- Sintaxis moderna que facilita el desarrollo(ES6+)
+En el proyecto he hecho que tenga las ventajas para implementar funcionalidades interactivas como la galeria dinamica, filtros, valicadion de formularios y el carrito de compras
+
+2. Sintaxis moderda de JavaScript(ES6+)
+- El codigo utiliza declaraciones modernas como:
+   let galleryImages = []; // Variable que puede cambiar
+   const galleryContainer = document.getElementById('contenedorgaleria'); // Constante que no cambia
+- Una funcion de flecha:
+He implementado una funcion de flecha:
+  galeríaImages.forEach((imagen, índice) => {
+  // Código dentro de la función flecha
+  });
+
+documento.addEventListener('DOMContentLoaded', () => {
+// Código que se ejecuta cuando el DOM está cargado
+});
+
+- Literales de plantilla:
+Uso de plantillas literales para generar HTML dinamico
+- 
+  galleryContainer.innerHTML += `
+    <p>
+        <img src="${image}" alt="Imagen ${index + 1}">
+        Eliminar
+    </p>
+`;
+
+3. Metodos de seleccion y manipulacion del DOM
+
+querySelector/querySelectorAll:
+    const listaProductos = document.querySelector('.featured-products__list');
+    const lista = document.querySelector('.cart-items');
+Cada metodo esta aplicado de forma optima segun su necesidad que le he dado:
+- getElementById para elementos unicos como ID
+- querySelector para seleccione mas complejas con selectores CSS
+- Manipulacion con propiedades como textContent, stylee.inneerHTML
+
+4. Creacion dinamica de elementos
+El codigo implementa la creacion dinamica de elementos en multiples funcionalidades:
+- Galeria interactiva:
+  galleryContainer.innerHTML += `
+    <p>
+        <img src="${image}" alt="Imagen ${index + 1}">
+        Eliminar
+    </p>
+`;
+
+- Carrito de compras
+He utilizado createElementy y appendChild para crear elementos de lista:
+  const li = document.createElement('li');
+  li.innerHTML = `
+    <p>${producto.nombre}</p>
+    <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
+`;
+lista.appendChild(li);
+
+5. Eliminacion de elementos
+He implementado en el codigo la eliminacion de elemento en varias funcionalidades:
+- Limpieza previa del contenedor
+  // Limpia el contenedor antes de actualizarlo
+  galleryContainer.innerHTML = '';
+  lista.innerHTML = '';
+Lo que hago en esa funcion es limpiar el contenedor antes de actualizarlo para evitar duplicados
+
+  - Eliminacion de elementos especificos
+
+    // Elimina un elemento del array
+    galeríaImages.splice(índice, 1);
+
+    // Elimina un producto del carrito
+    carrito.splice(índice, 1);
+
+Lo que hago ahi es elimino el array y luego actualizo la vista
+
+6. Separacion entre logica y presentacion
+Mi codigo mantiene una clara separacion entre logica y presentacion:
+- 
+- Uso de clases en lugar de estilos en linea
+  // En el formulario de validación
+    mensaje.style.color = 'rojo'; // Uso limitado y justificado
+    input.style.borderColor = 'red'; // Para retroalimentación visual inmediata
+- 
+- Respuesta clara a eventos
+El codigo implementa manejos de eventos claros y especificos:
+  // Evento de envío del formulario
+  formulario.addEventListener('enviar', (e) => {
+  e.preventDefault();
+  // Lógica de validación
+  });
+
+// Evento de carga del documento
+documento.addEventListener('DOMContentLoaded', () => {
+// Inicialización
+});
+Este codigo muestra la estructura organizada donde cada funcion tiene una resposabilidad clara y especifica.
 
 
 

@@ -75,6 +75,9 @@
 //  }
 
 
+
+/* ================= PARTE 3  ================= */
+
 // CREAR GALERIA INTERACTIVA DONDE LAS IMAGENES PUEDAN AÑADIRSE O ELIMINARSE DINAMICAMENTE //
 
 // Aquí estamos creando un array con las imágenes que inicialmente vamos a mostrar en la galería.
@@ -190,38 +193,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // CREAR FLUJO DEL PROYECTO LIBRE//
 
+// Función que carga el contenido del carrito en la página
 function cargarCarrito() {
-    const lista = document.querySelector('.cart-items');
-    const contador = document.getElementById('itemsCount');
+    const lista = document.querySelector('.cart-items'); // Selecciona el elemento HTML donde se mostrarán los productos del carrito
+    const contador = document.getElementById('itemsCount'); // Selecciona el elemento que mostrará la cantidad total de productos
+
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    // Limpiamos el contenido actual
-    lista.innerHTML = '';
-    // Recorremos el carrito y mostramos los productos
+    // Intenta obtener el carrito guardado en localStorage, si no existe, se crea un array vacío
+
+    lista.innerHTML = ''; // Limpia la lista actual del carrito antes de volver a mostrarla
+
+    // Recorre todos los productos guardados en el carrito
     carrito.forEach((producto, indice) => {
-        const li = document.createElement('li');
+        const li = document.createElement('li'); // Crea un nuevo elemento <li> para cada producto
+
+        // Define el contenido del <li>, mostrando el nombre y un botón para eliminarlo
         li.innerHTML = `
             <p>${producto.nombre}</p>
             <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
         `;
-        lista.appendChild(li);
-    });
-    // Actualizamos el contador
-    contador.textContent = carrito.length;
-}
-// Con esta funcion eliminaremos el producto del carrito//
 
+        lista.appendChild(li); // Añade el <li> al contenedor de la lista del carrito
+    });
+
+    contador.textContent = carrito.length; // Actualiza el número de productos mostrados en el contador
+}
+
+// Función para eliminar un producto del carrito
 function eliminarDelCarrito(indice) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    carrito.splice(indice, 1);
+    // Obtiene el carrito actual desde localStorage (si no hay, crea uno vacío)
+
+    carrito.splice(indice, 1); // Elimina el producto en la posición indicada (índice)
+
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    cargarCarrito();
+    // Guarda el nuevo carrito actualizado en localStorage
+
+    cargarCarrito(); // Recarga la vista del carrito en la página para reflejar el cambio
 }
 
+// Función para agregar un producto al carrito
+function agregarAlCarrito(nombreProducto) {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    // Obtiene el carrito actual o lo inicia vacío si no existe
+
+    carrito.push({ nombre: nombreProducto }); // Añade un nuevo objeto con el nombre del producto al carrito
+
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    // Guarda el carrito actualizado en el localStorage
+
+    alert(`${nombreProducto} añadido al carrito.`); // Muestra una alerta informando que se añadió el producto
+}
+
+// Evento que se ejecuta cuando el documento HTML ha sido cargado completamente
 document.addEventListener('DOMContentLoaded', () => {
+    // Comprueba si la URL actual contiene 'carrito.html'
     if (window.location.pathname.includes('carrito.html')) {
-        cargarCarrito();
+        cargarCarrito(); // Si estamos en la página del carrito, carga los productos automáticamente
     }
 });
+
 
 
 
